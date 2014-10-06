@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\ComDriver.cpp" />
+    <ClCompile Include="..\src\PortEnumerator.cpp" />
+    <ClCompile Include="..\src\serialdriver.cpp" />
+    <ClCompile Include="..\src\StdAfx.cpp" />
+    <ClCompile Include="..\src\usbdriver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\comdriver.h" />
+    <ClInclude Include="..\inc\PortEnumerator.h" />
+    <ClInclude Include="..\inc\serialdriver.h" />
+    <ClInclude Include="..\inc\StdAfx.h" />
+    <ClInclude Include="..\inc\usbdriver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\comdriver.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\comdriver.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\inc\setupapi.lib" />
+    <Library Include="..\inc\usbd.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c3ea428d-7573-47e4-a58c-f3e974589803}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{028642b9-5cab-47ce-a179-41e2a2c67cae}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{5b2268dc-3bcd-414e-a492-0597fa84bc1a}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+</Project>

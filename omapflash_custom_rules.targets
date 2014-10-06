@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <PropertyPageSchema
+      Include="$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml" />
+    <AvailableItemName
+      Include="PJT_Simulation_Compilation_">
+      <Targets>_PJT_Simulation_Compilation_</Targets>
+    </AvailableItemName>
+    <AvailableItemName
+      Include="CMD_Simulation_Compilation_">
+      <Targets>_CMD_Simulation_Compilation_</Targets>
+    </AvailableItemName>
+  </ItemGroup>
+  <UsingTask
+    TaskName="PJT_Simulation_Compilation_"
+    TaskFactory="XamlTaskFactory"
+    AssemblyName="Microsoft.Build.Tasks.v4.0">
+    <Task>$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml</Task>
+  </UsingTask>
+  <UsingTask
+    TaskName="CMD_Simulation_Compilation_"
+    TaskFactory="XamlTaskFactory"
+    AssemblyName="Microsoft.Build.Tasks.v4.0">
+    <Task>$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml</Task>
+  </UsingTask>
+  <Target
+    Name="_PJT_Simulation_Compilation_"
+    BeforeTargets="$(PJT_Simulation_Compilation_BeforeTargets)"
+    AfterTargets="$(PJT_Simulation_Compilation_AfterTargets)"
+    Condition="'@(PJT_Simulation_Compilation_)' != ''"
+    DependsOnTargets="$(PJT_Simulation_Compilation_DependsOn);ComputePJT_Simulation_Compilation_Output"
+    Outputs="%(PJT_Simulation_Compilation_.Outputs)"
+    Inputs="%(PJT_Simulation_Compilation_.Identity);%(PJT_Simulation_Compilation_.AdditionalDependencies);$(MSBuildProjectFile)">
+    <ItemGroup
+      Condition="'@(SelectedFiles)' != ''">
+      <PJT_Simulation_Compilation_
+        Remove="@(PJT_Simulation_Compilation_)"
+        Condition="'%(Identity)' != '@(SelectedFiles)'" />
+    </ItemGroup>
+    <ItemGroup>
+      <PJT_Simulation_Compilation__tlog
+        Include="%(PJT_Simulation_Compilation_.Outputs)"
+        Condition="'%(PJT_Simulation_Compilation_.Outputs)' != '' and '%(PJT_Simulation_Compilation_.ExcludedFromBuild)' != 'true'">
+        <Source>@(PJT_Simulation_Compilation_, '|')</Source>
+      </PJT_Simulation_Compilation__tlog>
+    </ItemGroup>
+    <Message
+      Importance="High"
+      Text="%(PJT_Simulation_Compilation_.ExecutionDescription)" />
+    <WriteLinesToFile
+      Condition="'@(PJT_Simulation_Compilation__tlog)' != '' and '%(PJT_Simulation_Compilation__tlog.ExcludedFromBuild)' != 'true'"
+      File="$(IntDir)$(ProjectName).write.1.tlog"
+      Lines="^%(PJT_Simulation_Compilation__tlog.Source);@(PJT_Simulation_Compilation__tlog-&gt;'%(Fullpath)')" />
+    <PJT_Simulation_Compilation_
+      Condition="'@(PJT_Simulation_Compilation_)' != '' and '%(PJT_Simulation_Compilation_.ExcludedFromBuild)' != 'true'"
+      CommandLineTemplate="%(PJT_Simulation_Compilation_.CommandLineTemplate)"
+      AdditionalOptions="%(PJT_Simulation_Compilation_.AdditionalOptions)"
+      Inputs="%(PJT_Simulation_Compilation_.Identity)" />
+  </Target>
+  <PropertyGroup>
+    <ComputeLinkInputsTargets>
+            $(ComputeLinkInputsTargets);
+            ComputePJT_Simulation_Compilation_Output;
+          </ComputeLinkInputsTargets>
+    <ComputeLibInputsTargets>
+            $(ComputeLibInputsTargets);
+            ComputePJT_Simulation_Compilation_Output;
+          </ComputeLibInputsTargets>
+  </PropertyGroup>
+  <Target
+    Name="ComputePJT_Simulation_Compilation_Output"
+    Condition="'@(PJT_Simulation_Compilation_)' != ''">
+    <ItemGroup>
+      <PJT_Simulation_Compilation_DirsToMake
+        Condition="'@(PJT_Simulation_Compilation_)' != '' and '%(PJT_Simulation_Compilation_.ExcludedFromBuild)' != 'true'"
+        Include="%(PJT_Simulation_Compilation_.Outputs)" />
+      <Link
+        Include="%(PJT_Simulation_Compilation_DirsToMake.Identity)"
+        Condition="'%(Extension)'=='.obj' or '%(Extension)'=='.res' or '%(Extension)'=='.rsc' or '%(Extension)'=='.lib'" />
+      <Lib
+        Include="%(PJT_Simulation_Compilation_DirsToMake.Identity)"
+        Condition="'%(Extension)'=='.obj' or '%(Extension)'=='.res' or '%(Extension)'=='.rsc' or '%(Extension)'=='.lib'" />
+      <ImpLib
+        Include="%(PJT_Simulation_Compilation_DirsToMake.Identity)"
+        Condition="'%(Extension)'=='.obj' or '%(Extension)'=='.res' or '%(Extension)'=='.rsc' or '%(Extension)'=='.lib'" />
+    </ItemGroup>
+    <MakeDir
+      Directories="@(PJT_Simulation_Compilation_DirsToMake-&gt;'%(RootDir)%(Directory)')" />
+  </Target>
+  <Target
+    Name="_CMD_Simulation_Compilation_"
+    BeforeTargets="$(CMD_Simulation_Compilation_BeforeTargets)"
+    AfterTargets="$(CMD_Simulation_Compilation_AfterTargets)"
+    Condition="'@(CMD_Simulation_Compilation_)' != ''"
+    DependsOnTargets="$(CMD_Simulation_Compilation_DependsOn);ComputeCMD_Simulation_Compilation_Output"
+    Outputs="%(CMD_Simulation_Compilation_.Outputs)"
+    Inputs="%(CMD_Simulation_Compilation_.Identity);%(CMD_Simulation_Compilation_.AdditionalDependencies);$(MSBuildProjectFile)">
+    <ItemGroup
+      Condition="'@(SelectedFiles)' != ''">
+      <CMD_Simulation_Compilation_
+        Remove="@(CMD_Simulation_Compilation_)"
+        Condition="'%(Identity)' != '@(SelectedFiles)'" />
+    </ItemGroup>
+    <ItemGroup>
+      <CMD_Simulation_Compilation__tlog
+        Include="%(CMD_Simulation_Compilation_.Outputs)"
+        Condition="'%(CMD_Simulation_Compilation_.Outputs)' != '' and '%(CMD_Simulation_Compilation_.ExcludedFromBuild)' != 'true'">
+        <Source>@(CMD_Simulation_Compilation_, '|')</Source>
+      </CMD_Simulation_Compilation__tlog>
+    </ItemGroup>
+    <Message
+      Importance="High"
+      Text="%(CMD_Simulation_Compilation_.ExecutionDescription)" />
+    <WriteLinesToFile
+      Condition="'@(CMD_Simulation_Compilation__tlog)' != '' and '%(CMD_Simulation_Compilation__tlog.ExcludedFromBuild)' != 'true'"
+      File="$(IntDir)$(ProjectName).write.1.tlog"
+      Lines="^%(CMD_Simulation_Compilation__tlog.Source);@(CMD_Simulation_Compilation__tlog-&gt;'%(Fullpath)')" />
+    <CMD_Simulation_Compilation_
+      Condition="'@(CMD_Simulation_Compilation_)' != '' and '%(CMD_Simulation_Compilation_.ExcludedFromBuild)' != 'true'"
+      CommandLineTemplate="%(CMD_Simulation_Compilation_.CommandLineTemplate)"
+      AdditionalOptions="%(CMD_Simulation_Compilation_.AdditionalOptions)"
+      Inputs="%(CMD_Simulation_Compilation_.Identity)" />
+  </Target>
+  <PropertyGroup>
+    <ComputeLinkInputsTargets>
+            $(ComputeLinkInputsTargets);
+            ComputeCMD_Simulation_Compilation_Output;
+          </ComputeLinkInputsTargets>
+    <ComputeLibInputsTargets>
+            $(ComputeLibInputsTargets);
+            ComputeCMD_Simulation_Compilation_Output;
+          </ComputeLibInputsTargets>
+  </PropertyGroup>
+  <Target
+    Name="ComputeCMD_Simulation_Compilation_Output"
+    Condition="'@(CMD_Simulation_Compilation_)' != ''">
+    <ItemGroup>
+      <CMD_Simulation_Compilation_DirsToMake
+        Condition="'@(CMD_Simulation_Compilation_)' != '' and '%(CMD_Simulation_Compilation_.ExcludedFromBuild)' != 'true'"
+        Include="%(CMD_Simulation_Compilation_.Outputs)" />
+      <Link
+        Include="%(CMD_Simulation_Compilation_DirsToMake.Identity)"
+        Condition="'%(Extension)'=='.obj' or '%(Extension)'=='.res' or '%(Extension)'=='.rsc' or '%(Extension)'=='.lib'" />
+      <Lib
+        Include="%(CMD_Simulation_Compilation_DirsToMake.Identity)"
+        Condition="'%(Extension)'=='.obj' or '%(Extension)'=='.res' or '%(Extension)'=='.rsc' or '%(Extension)'=='.lib'" />
+      <ImpLib
+        Include="%(CMD_Simulation_Compilation_DirsToMake.Identity)"
+        Condition="'%(Extension)'=='.obj' or '%(Extension)'=='.res' or '%(Extension)'=='.rsc' or '%(Extension)'=='.lib'" />
+    </ItemGroup>
+    <MakeDir
+      Directories="@(CMD_Simulation_Compilation_DirsToMake-&gt;'%(RootDir)%(Directory)')" />
+  </Target>
+</Project>

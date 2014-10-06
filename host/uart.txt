@@ -1,0 +1,2 @@
+-com 21 -boot_package_delay 500 -max_boot_package_size 1024 
+ 

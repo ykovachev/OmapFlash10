@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RunOnly|Win32">
+      <Configuration>RunOnly</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{109C8CD5-A26C-4DC3-BF0B-1C352C24330F}</ProjectGuid>
+    <RootNamespace>OMAPFlash</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Program Files\Microsoft Visual Studio 10.0\VC\include;..\comdriver\inc;temp_include;drivers\windows\usb\api;..\target\include\boot;c:\Program Files\Microsoft Visual Studio 10.0\VC\include;c:\winddk\7600.16385.0\inc\ddk;c:\winddk\7600.16385.0\inc\api;C:\Program Files\Microsoft SDKs\Windows\v6.0A\Include;C:\WinDDK\7600.16385.1\inc\ddk;C:\WinDDK\7600.16385.1\inc\mfc42;C:\WinDDK\7600.16385.1\inc\api;..\common\inc;..\android\development\windows\usb\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_ZIP;OMAP_DEVICE</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>..\android\development\windows\usb\api\AdbWinApi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\WinDDK\7600.16385.1\lib\win7\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\android\development\windows\usb\api\AdbWinApi.dll $(OutDir).</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Program Files\Microsoft Visual Studio 9.0\VC\include;..\comdriver\inc;temp_include;drivers\windows\usb\api;..\target\include\boot;c:\Program Files\Microsoft Visual Studio 9.0\VC\include;c:\winddk\7600.16385.0\inc\ddk;c:\winddk\7600.16385.0\inc\api;C:\Program Files\Microsoft SDKs\Windows\v6.0A\Include;C:\WinDDK\7600.16385.1\inc\ddk;C:\WinDDK\7600.16385.1\inc\mfc42;C:\WinDDK\7600.16385.1\inc\api;..\common\inc;..\android\development\windows\usb\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_ZIP;OMAP_DEVICE</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>..\android\development\windows\usb\api\AdbWinApi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\WinDDK\7600.16385.1\lib\win7\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\android\development\windows\usb\api\AdbWinApi.dll $(OutDir).</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\comdriver\build\comdriver.vcxproj">
+      <Project>{5fe497ab-2dc8-44df-8736-fa1d74ef50b3}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\generate_test_data\generate_test_data.vcxproj">
+      <Project>{abdbd015-5e76-47f1-82c2-a0d931078fd6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\src\adler32.c" />
+    <ClCompile Include="board_configuration.c" />
+    <ClCompile Include="bootimg.c" />
+    <ClCompile Include="crc32.c" />
+    <ClCompile Include="engine.c" />
+    <ClCompile Include="fastboot.c" />
+    <ClCompile Include="memory_partitions.c" />
+    <ClCompile Include="omap_protocol.c" />
+    <ClCompile Include="omap_windows.cpp" />
+    <ClCompile Include="output.c" />
+    <ClCompile Include="peripheralboot.c" />
+    <ClCompile Include="protocol.c" />
+    <ClCompile Include="usb_windows.c" />
+    <ClCompile Include="util_windows.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="board_configuration.h" />
+    <ClInclude Include="bootimg.h" />
+    <ClInclude Include="fastboot.h" />
+    <ClInclude Include="memory_partitions.h" />
+    <ClInclude Include="omap_protocol.h" />
+    <ClInclude Include="output.h" />
+    <ClInclude Include="unistd.h" />
+    <ClInclude Include="usb.h" />
+    <ClInclude Include="util_windows.h" />
+    <ClInclude Include="version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\doc\development_environment.txt" />
+    <None Include="..\doc\fastboot_protocol.txt" />
+    <None Include="License.txt" />
+    <CustomBuild Include="omapflash2nd.txt">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="..\doc\omapflash_protocol.rtf" />
+    <None Include="platform_configuration.txt" />
+    <None Include="..\doc\porting_guide.txt" />
+    <None Include="..\release.bat" />
+    <None Include="Targets\Configurations\configuration_evm4470es1.0_elpida_8g.txt" />
+    <None Include="Targets\Configurations\configuration_evm5430es1.0_samsung_16g.txt" />
+    <None Include="Targets\Configurations\configuration_evm5432es1.0_elpida_16g.txt" />
+    <None Include="Targets\Definitions\definitions_omap5.txt" />
+    <None Include="uart.txt" />
+    <None Include="uboot_emmc.txt" />
+    <None Include="uboot_ram.txt" />
+    <None Include="SampleScripts\3630\uart_nand.txt" />
+    <None Include="SampleScripts\3630\uart_nor.txt" />
+    <None Include="SampleScripts\3630\uart_onenand.txt" />
+    <None Include="SampleScripts\3630\usb_nand.txt" />
+    <None Include="SampleScripts\3630\usb_nor.txt" />
+    <None Include="SampleScripts\3630\usb_onenand.txt" />
+    <None Include="SampleScripts\3630\usb_sdram.txt" />
+    <None Include="SampleScripts\4430\kozio.bat" />
+    <None Include="SampleScripts\4430\kozio.txt" />
+    <None Include="SampleScripts\4430\kozio_ch.txt" />
+    <None Include="SampleScripts\4430\kozio_emmc.txt" />
+    <None Include="SampleScripts\4430\kozio_emmc_upload.txt" />
+    <None Include="SampleScripts\4430\uart_emmc.txt" />
+    <None Include="SampleScripts\4430\uboot_emmc.txt" />
+    <None Include="SampleScripts\4430\uboot_ram.txt" />
+    <None Include="SampleScripts\4430\usb_emmc.txt" />
+    <None Include="SampleScripts\4430\usb_sdram.txt" />
+    <None Include="Targets\Definitions\definitions_omap3.txt" />
+    <None Include="Targets\Definitions\definitions_omap4.txt" />
+    <None Include="Targets\Configurations\configuration_evm37xx_hynix_2g.txt" />
+    <None Include="Targets\Configurations\configuration_evm4430es1.0_elpida_4g.txt" />
+    <None Include="Targets\Configurations\configuration_evm4430es2.0_elpida_4g.txt" />
+    <None Include="Targets\Configurations\configuration_evm4460es1.0_elpida_8g.txt" />
+    <None Include="Targets\Configurations\configuration_sdp3630_hynix_4g.txt" />
+    <None Include="Targets\Configurations\configuration_sdp3630_hynix_8g.txt" />
+    <None Include="Targets\Configurations\configuration_zoom2_micron_2g.txt" />
+    <None Include="Targets\Configurations\configuration_zoom3_hynix_4g.txt" />
+    <None Include="Targets\Configurations\configuration_zoom3_hynix_8g.txt" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

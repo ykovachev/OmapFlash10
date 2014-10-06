@@ -1,0 +1,31 @@
+## UBOOT_RAM.TXT
+## --------------
+##
+
+-omap 4
+-t 36000 -p SEVM_MDDR_ELPIDA_4G -2 
+
+##This script require sysboot usb,emmc
+
+##uboot that initial connect through uart (user must go to terminal and type 'fastboot')
+chip_download SDRAM@00e80000 uboot\u-boot.bin
+
+## The followin initialisation is needed by u-boot when running out of ram without previous execution of x-load
+## MMC MMC1 
+command HAL_CM_EnableModuleClocks 1 0
+## MMC MMC2
+command HAL_CM_EnableModuleClocks 1 1
+command HAL_CTRL_ConfigurePads 1 1
+## UART UART3
+command HAL_CM_EnableModuleClocks 2 2
+command HAL_CTRL_ConfigurePads 2 2
+## GPTIMER1
+command HAL_CM_EnableModuleClocks 5 0
+## GPTIMER2
+command HAL_CM_EnableModuleClocks 5 1
+## WDTIMER2
+command HAL_CM_EnableModuleClocks 6 1
+
+## execute u-boot image
+command branch SDRAM 0x00e80000
+

@@ -1,0 +1,50 @@
+# list 2nd files per device
+# format:
+#	Name <AsicId.OmapId> <AsicId.Version> <HS|GP> 2nd-file additional <additional-commandline-parameters>
+
+# OMAP3 real hardware
+ZOOM2_MDDR_MICRON_2G 343007 57 GP Targets\2nd-Downloaders\dnld_startup_omap3_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_zoom2_micron_2g.txt
+EVM_MDDR_HYNIX_2G 363007 07 GP Targets\2nd-Downloaders\dnld_startup_omap3_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm37xx_hynix_2g.txt
+EVM_MDDR_HYNIX_2G 363007 07 HS Targets\2nd-Downloaders\dnld_startup_omap3_hs.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm37xx_hynix_2g.txt
+SDP_MDDR_HYNIX_4G 363007 07 GP Targets\2nd-Downloaders\dnld_startup_omap3_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_sdp3630_hynix_4g.txt
+SDP_MDDR_HYNIX_4G 363007 07 HS Targets\2nd-Downloaders\dnld_startup_omap3_hs.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_sdp3630_hynix_4g.txt
+SDP_MDDR_HYNIX_8G 363007 07 GP Targets\2nd-Downloaders\dnld_startup_omap3_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_sdp3630_hynix_8g.txt
+SDP_MDDR_HYNIX_8G 363007 07 HS Targets\2nd-Downloaders\dnld_startup_omap3_hs.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_sdp3630_hynix_8g.txt
+ZOOM3_MDDR_HYNIX_4G 363007 07 GP Targets\2nd-Downloaders\dnld_startup_omap3_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_zoom3_hynix_4g.txt
+ZOOM3_MDDR_HYNIX_4G 363007 07 HS Targets\2nd-Downloaders\dnld_startup_omap3_hs.signed.2nd -peripheralboot_reopen  -board_config Targets\Configurations\configuration_zoom3_hynix_4g.txt
+ZOOM3_MDDR_HYNIX_8G 363007 07 GP Targets\2nd-Downloaders\dnld_startup_omap3_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_zoom3_hynix_8g.txt
+ZOOM3_MDDR_HYNIX_8G 363007 07 HS Targets\2nd-Downloaders\dnld_startup_omap3_hs.signed.2nd -peripheralboot_reopen  -board_config Targets\Configurations\configuration_zoom3_hynix_8g.txt
+
+# OMAP4 virtio simulation software
+SDP_ROMAPI_DEBUG 44300F 01 GP Targets\2nd-Downloaders\dnld_startup_omap4_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4430_elpida_4g.txt
+
+# OMAP4 real hardware
+SEVM_MDDR_ELPIDA_4G 443007 01 GP Targets\2nd-Downloaders\dnld_startup_omap4_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4430es1.0_elpida_4g.txt
+SEVM_MDDR_ELPIDA_4G 443007 01 HS Targets\2nd-Downloaders\dnld_startup_omap4_hs_es1.s1.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4430es1.0_elpida_4g.txt
+SEVM_MDDR_ELPIDA_4G 443007 02 GP Targets\2nd-Downloaders\dnld_startup_omap4_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4430es2.0_elpida_4g.txt
+SEVM_MDDR_ELPIDA_4G 443007 02 HS Targets\2nd-Downloaders\dnld_startup_omap4_hs_es2.s1.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4430es2.0_elpida_4g.txt
+SEVM_MDDR_ELPIDA_4G 443007 03 GP Targets\2nd-Downloaders\dnld_startup_omap4_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4430es2.0_elpida_4g.txt
+SEVM_MDDR_ELPIDA_4G 443007 03 HS Targets\2nd-Downloaders\dnld_startup_omap4_hs_es2.s2.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4430es2.0_elpida_4g.txt
+SEVM_MDDR_ELPIDA_4G 443007 04 GP Targets\2nd-Downloaders\dnld_startup_omap4_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4430es2.0_elpida_4g.txt
+SEVM_MDDR_ELPIDA_4G 443007 04 HS Targets\2nd-Downloaders\dnld_startup_omap4_hs_es2.s2.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4430es2.0_elpida_4g.txt
+SEVM_MDDR_ELPIDA_8G 444007 01 GP Targets\2nd-Downloaders\dnld_startup_omap4_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4460es1.0_elpida_8g.txt
+SEVM_MDDR_ELPIDA_8G 444007 01 HS Targets\2nd-Downloaders\dnld_startup_omap4_hs_es2.s2.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4460es1.0_elpida_8g.txt
+SEVM_MDDR_ELPIDA_8G 447007 01 GP Targets\2nd-Downloaders\dnld_startup_omap4_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4470es1.0_elpida_8g.txt
+SEVM_MDDR_ELPIDA_8G 447007 01 HS Targets\2nd-Downloaders\dnld_startup_omap4_hs_es2.s2.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4470es1.0_elpida_8g.txt
+
+# OMAP5 real hardware
+SEVM_NO_MDDR 543007 01 GP Targets\2nd-Downloaders\dnld_startup_omap5_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm5430es1.0.txt
+SEVM_MDDR_SAMSUNG_16G 543007 01 GP Targets\2nd-Downloaders\dnld_startup_omap5_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm5430es1.0_samsung_16g.txt
+SEVM_MDDR_SAMSUNG_16G 543007 01 HS Targets\2nd-Downloaders\dnld_startup_omap5_hs_es1.s2.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm5430es1.0_samsung_16g.txt
+UEVM_NO_DDR3 543007 01 GP Targets\2nd-Downloaders\dnld_startup_omap5_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm5432es1.0.txt
+UEVM_DDR3_ELPIDA_16G 543007 01 GP Targets\2nd-Downloaders\dnld_startup_omap5_gp.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm5432es1.0_elpida_16g.txt
+UEVM_DDR3_ELPIDA_16G 543007 01 HS Targets\2nd-Downloaders\dnld_startup_omap5_hs_es1.s2.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm5432es1.0_elpida_16g.txt
+
+# Memory Test Only 2nds - These have memory test support for HS devices but do not support download of binaries to platform memories
+MT_SEVM_MDDR_ELPIDA_4G 443007 01 HS Targets\2nd-Downloaders\mt_startup_omap4_hs_es1.s1.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4430es1.0_elpida_4g.txt
+MT_SEVM_MDDR_ELPIDA_4G 443007 02 HS Targets\2nd-Downloaders\mt_startup_omap4_hs_es2.s1.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4430es2.0_elpida_4g.txt
+MT_SEVM_MDDR_ELPIDA_4G 443007 03 HS Targets\2nd-Downloaders\mt_startup_omap4_hs_es2.s2.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4430es2.0_elpida_4g.txt
+MT_SEVM_MDDR_ELPIDA_4G 443007 04 HS Targets\2nd-Downloaders\mt_startup_omap4_hs_es2.s2.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4430es2.0_elpida_4g.txt
+MT_SEVM_MDDR_ELPIDA_8G 444007 01 HS Targets\2nd-Downloaders\mt_startup_omap4_hs_es2.s2.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4460es1.0_elpida_8g.txt
+MT_SEVM_MDDR_ELPIDA_8G 447007 01 HS Targets\2nd-Downloaders\mt_startup_omap4_hs_es2.s2.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm4470es1.0_elpida_8g.txt
+MT_SEVM_MDDR_SAMSUNG_16G 543007 01 HS Targets\2nd-Downloaders\mt_startup_omap5_hs_es1.s2.signed.2nd -peripheralboot_reopen -board_config Targets\Configurations\configuration_evm5430es1.0_samsung_16g.txt

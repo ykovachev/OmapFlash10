@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug All|Win32">
+      <Configuration>Debug All</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RunOnly|Win32">
+      <Configuration>RunOnly</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>target_2nd</ProjectName>
+    <ProjectGuid>{70745D6F-10F2-4D7A-962A-B32EA62FC158}</ProjectGuid>
+    <RootNamespace>dnld_startup</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="..\..\..\omapflash_custom_rules.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\target\src\silicon\omap3;..\..\..\target\src\silicon\Common;..\..\..\target\src\platform\common;..\..\..\target\src\dnldstartup;..\..\..\target\simulation\dnld_startup;..\..\..\dalfwrk\inc;..\..\..\dalfwrk\src\devices\inc;..\..\..\dnld\inc;..\..\..\disp\inc;..\..\..\flashdrv\inc;..\..\..\ll\inc;..\..\..\utils\inc;..\..\..\common\sapinc;..\..\..\common\inc;..\..\..\target\src\silicon\romapi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;SIMULATION;SECOND_DNLD_BUILD;ROMAPI;noOMAP3_GP;noOMAP3_HS;noOMAP4_GP;noOMAP4_HS;noOMAP4_MT;noOMAP5_HS;noOMAP5_MT;OMAP5_GP;noOMAPX</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4311;4312;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedIncludeFiles>simulation.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>Target Build</Message>
+      <Command>cd
+cd ..\..\build\projects\
+make -f make_all_2nd clean | perl ..\..\build\tms470out_to_vs9out.pl
+make -f make_all_2nd all | perl ..\..\build\tms470out_to_vs9out.pl
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\target\src\silicon\omap3;..\..\..\target\src\silicon\Common;..\..\..\target\src\platform\common;..\..\..\target\simulation\dnld_startup;..\..\..\dalfwrk\inc;..\..\..\dalfwrk\src\devices\inc;..\..\..\dnld\inc;..\..\..\disp\inc;..\..\..\flashdrv\inc;..\..\..\ll\inc;..\..\..\utils\inc;..\..\..\common\sapinc;..\..\..\common\inc;..\..\..\target\src\silicon\romapi;..\..\..\target\src\dnldstartup;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;SIMULATION;SECOND_DNLD_BUILD;ROMAPI;noOMAP3;OMAP5_GP</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd
+cd ..\..\build\projects\
+make -f make_all_2nd clean | perl ..\..\build\tms470out_to_vs9out.pl
+make -f make_all_2nd all | perl ..\..\build\tms470out_to_vs9out.pl
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>\OMAPSW_DP\csst\target\3430\src\silicon\omap3430;\OMAPSW_DP\csst\target\3430\src\platform\common;\OMAPSW_DP\csst\target\dnld\inc;\OMAPSW_DP\csst\target\dalfwrk\inc;\OMAPSW_DP\csst\target\ll\inc;\OMAPSW_DP\csst\target\3430\src\platform\3430sdp;\OMAPSW_DP\csst\common\sapinc;\OMAPSW_DP\csst\target\flashdrv\inc;\OMAPSW_DP\csst\target\utils\inc;\OMAPSW_DP\csst\common\inc;\OMAPSW_DP\csst\target\disp\inc;\OMAPSW_DP\csst\target\dalfwrk\src\devices\inc;\OMAPSW_DP\csst\target\3430\src\silicon\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd
+cd ..\..\build\projects\
+make -f make_all_2nd clean | perl ..\..\build\tms470out_to_vs9out.pl
+make -f make_all_2nd all | perl ..\..\build\tms470out_to_vs9out.pl
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">
+    <PostBuildEvent>
+      <Command>cd
+cd ..\..\build\projects\
+make -f make_all_2nd clean | perl ..\..\build\tms470out_to_vs9out.pl
+make -f make_all_2nd all | perl ..\..\build\tms470out_to_vs9out.pl
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\common\src\adler32.c" />
+    <ClCompile Include="..\..\src\dnldstartup\debug.c" />
+    <ClCompile Include="..\..\..\dnld\src\wrapper\disp.c" />
+    <ClCompile Include="..\..\..\dnld\src\dnld.c" />
+    <ClCompile Include="..\..\src\dnldstartup\init.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dnldstartup\mem.c" />
+    <ClCompile Include="..\..\..\ll\src\ll.c" />
+    <ClCompile Include="..\..\src\dnldstartup\omapconfig.c" />
+    <ClCompile Include="..\..\src\silicon\romapi\romapi_uart.c" />
+    <ClCompile Include="..\..\src\silicon\romapi\romapi_usb.c" />
+    <ClCompile Include="..\..\src\silicon\omap3\uart.c" />
+    <ClCompile Include="simulation.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\common\inc\adler32.h" />
+    <ClInclude Include="..\..\src\dnldstartup\mem.h" />
+    <ClInclude Include="..\..\src\silicon\Common\config.h" />
+    <ClInclude Include="..\..\..\disp\inc\csst_tgt.h" />
+    <ClInclude Include="..\..\src\dnldstartup\debug.h" />
+    <ClInclude Include="..\..\..\dnld\inc\disp.h" />
+    <ClInclude Include="..\..\..\dnld\inc\dnld.h" />
+    <ClInclude Include="..\..\..\common\inc\error.h" />
+    <ClInclude Include="..\..\..\flashdrv\inc\flash_drv.h" />
+    <ClInclude Include="..\..\src\dnldstartup\init.h" />
+    <ClInclude Include="..\..\..\ll\inc\ll.h" />
+    <ClInclude Include="..\..\src\dnldstartup\omapconfig.h" />
+    <ClInclude Include="..\..\src\silicon\romapi\romapi.h" />
+    <ClInclude Include="..\..\src\silicon\romapi\romapi_3430.h" />
+    <ClInclude Include="..\..\src\silicon\romapi\romapi_4430.h" />
+    <ClInclude Include="..\..\src\silicon\romapi\romapi_5430.h" />
+    <ClInclude Include="..\..\src\silicon\romapi\romapi_types.h" />
+    <ClInclude Include="..\..\src\silicon\romapi\romcode_types.h" />
+    <ClInclude Include="..\..\src\silicon\Common\silicon.h" />
+    <ClInclude Include="..\..\src\silicon\Common\silicon_3430.h" />
+    <ClInclude Include="..\..\src\silicon\Common\silicon_4430.h" />
+    <ClInclude Include="..\..\src\silicon\Common\silicon_emif.h" />
+    <ClInclude Include="..\..\src\silicon\Common\silicon_gpmc.h" />
+    <ClInclude Include="..\..\src\silicon\Common\silicon_sdrc.h" />
+    <ClInclude Include="..\..\..\common\inc\types.h" />
+    <ClInclude Include="..\..\src\silicon\omap3\uart.h" />
+    <ClInclude Include="..\..\..\common\inc\compiler.h" />
+    <ClInclude Include="simulation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\cmd_simulation_compiler.pl" />
+    <None Include="..\..\..\pjt_simulation_compiler.pl" />
+    <None Include="..\..\..\_out_\bin\omap3\Debug\dnld_startup_omap3_gp.map" />
+    <None Include="..\..\..\_out_\bin\omap3\Debug\dnld_startup_omap3_hs.map" />
+    <None Include="..\..\..\_out_\bin\omap4\Debug\dnld_startup_omap4_gp.map" />
+    <None Include="..\..\..\_out_\bin\omap4\Debug\dnld_startup_omap4_hs.map" />
+    <None Include="..\..\..\_out_\bin\omap4\Debug\mt_startup_omap4_hs.map" />
+    <None Include="..\..\..\_out_\bin\omap5\Debug\dnld_startup_omap5_gp.map" />
+    <None Include="..\..\..\_out_\bin\omap5\Debug\dnld_startup_omap5_hs.map" />
+    <None Include="..\..\..\_out_\bin\omap5\Debug\mt_startup_omap5_hs.map" />
+    <None Include="..\..\build\projects\2nd_makefile" />
+    <None Include="..\..\build\projects\make_all_2nd" />
+    <None Include="..\..\build\tms470out_to_vs9out.pl" />
+    <None Include="..\..\src\boot\dnld_start.s" />
+    <None Include="..\..\src\silicon\Common\mmu.s" />
+  </ItemGroup>
+  <ItemGroup>
+    <CMD_Simulation_Compilation_ Include="..\..\build\linker\dnld_startup_omap3_gp.cmd" />
+    <CMD_Simulation_Compilation_ Include="..\..\build\linker\dnld_startup_omap3_hs.cmd" />
+    <CMD_Simulation_Compilation_ Include="..\..\build\linker\dnld_startup_omap4_gp.cmd" />
+    <CMD_Simulation_Compilation_ Include="..\..\build\linker\dnld_startup_omap4_hs.cmd" />
+    <CMD_Simulation_Compilation_ Include="..\..\build\linker\dnld_startup_omap5_gp.cmd" />
+    <CMD_Simulation_Compilation_ Include="..\..\build\linker\dnld_startup_omap5_hs.cmd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\..\..\omapflash_custom_rules.targets" />
+  </ImportGroup>
+</Project>

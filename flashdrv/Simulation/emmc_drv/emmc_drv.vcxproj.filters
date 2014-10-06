@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{6e030bdb-e54d-45b5-a3b4-8f2374c9608e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\drv_config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\emmc_drv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\flash_drv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\target\src\platform\common\mmc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\target\simulation\dnld_startup\simulation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\emmc_drv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\target\src\platform\common\mmc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\dalfwrk\src\devices\inc\mmc_dis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\sparse_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\flash_drv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CMD_Simulation_Compilation_ Include="..\..\build\flash_drv.cmd">
+      <Filter>Resource Files</Filter>
+    </CMD_Simulation_Compilation_>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\_out_\bin\flashdrv\Debug\emmc_drv.map">
+      <Filter>Generated Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,80 @@
+################################################################################
+# Makfile - OMAPFlash 2nd - ALL
+################################################################################
+
+# All Target
+all:  
+	-@echo 'make all'
+	make -f 2nd_makefile CONFIG=OMAP3_GP all
+	make -f 2nd_makefile CONFIG=OMAP3_HS all
+	make -f 2nd_makefile CONFIG=OMAP4_GP all
+	make -f 2nd_makefile CONFIG=OMAP4_HS all
+	make -f 2nd_makefile CONFIG=OMAP4_MT all
+	make -f 2nd_makefile CONFIG=OMAP5_GP all
+	make -f 2nd_makefile CONFIG=OMAP5_HS all
+	make -f 2nd_makefile CONFIG=OMAP5_MT all
+	-@echo 'Finished All'
+	-@echo ' '
+
+gp3:  
+	-@echo 'make all'
+	make -f 2nd_makefile CONFIG=OMAP3_GP all	
+	-@echo 'Finished OMAP3 GP'
+	-@echo ' '
+
+hs3:  
+	-@echo 'make all'
+	make -f 2nd_makefile CONFIG=OMAP3_HS all	
+	-@echo 'Finished OMAP3 HS'
+	-@echo ' '
+
+gp4:  
+	-@echo 'make all'
+	make -f 2nd_makefile CONFIG=OMAP4_GP all	
+	-@echo 'Finished OMAP4 GP'
+	-@echo ' '
+
+hs4:  
+	-@echo 'make all'
+	make -f 2nd_makefile CONFIG=OMAP4_HS all	
+	-@echo 'Finished OMAP4 HS'
+	-@echo ' '
+
+gp5:  
+	-@echo 'make all'
+	make -f 2nd_makefile CONFIG=OMAP5_GP all	
+	-@echo 'Finished OMAP5 GP'
+	-@echo ' '
+
+hs5:  
+	-@echo 'make all'
+	make -f 2nd_makefile CONFIG=OMAP5_HS all	
+	-@echo 'Finished OMAP5 HS'
+	-@echo ' '
+
+gphs5:
+	-@echo 'make all'
+	make -f 2nd_makefile CONFIG=OMAP5_GP all	
+	make -f 2nd_makefile CONFIG=OMAP5_HS all	
+	-@echo 'Finished OMAP5 GP+HS'
+	-@echo ' '
+
+
+
+# All Target
+clean:  
+	-@echo 'make Clean'
+	make -f 2nd_makefile CONFIG=OMAP3_GP clean 
+	make -f 2nd_makefile CONFIG=OMAP3_HS clean 
+	make -f 2nd_makefile CONFIG=OMAP4_GP clean 
+	make -f 2nd_makefile CONFIG=OMAP4_HS clean 
+	make -f 2nd_makefile CONFIG=OMAP4_MT clean 
+	make -f 2nd_makefile CONFIG=OMAP5_GP clean 
+	make -f 2nd_makefile CONFIG=OMAP5_HS clean 
+	make -f 2nd_makefile CONFIG=OMAP5_MT clean 
+	-@echo 'Finished Clean'
+	-@echo ' '
+
+.PHONY: all clean 
+.SECONDARY:
+

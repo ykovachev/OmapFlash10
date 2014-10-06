@@ -1,0 +1,38 @@
+-- Development environment for OMAPFlash --
+
+The following tools will be needed in order to work with this source release of OMAPFlash:
+
+1) Microsoft Visual Studio 2010, or
+   Microsoft Visual Studio Express 2010 (note that the express version cannot build the installer)
+
+2) Texas Instruments TMS470 Code Generation Tools v4.4.8 (or later) with Code Composer Studio v3.3, or
+   Code Composer Studio v4.x with TMS470 that supports Cortex A9. If v4 is used there may be issues with
+   path names in the calls to the build system from visual studio - these can be addressed by changing 
+   the installation directory of CCS or by modifying the calls in the build system.
+
+   - You can download it from https://www-a.ti.com/downloads/sds_support/CodeGenerationTools.htm#TMS470
+   - Set TMS470_HOME system variable to the directory where you installed the TMS470 compiler.
+   - If the TMS470_HOME variable is not set, the default location is "C:/Program Files/Texas Instruments/TMS470 Code Generation Tools 4.6.6" directory
+   - If "TEMP" user variable is set in your environment, make sure that the directory name doesn't have an white space in it. TMS470 Compiler doesn't like it.
+
+3) ActiveState ActivePerl 1007 or compatible Perl interpreter
+
+   - Set Perl in the System Path.
+
+4) MinGW installation including GNU build tools and MSYS
+
+   - Get MinGW from http://www.mingw.org/wiki/Getting_Started
+   - Get MSYS from http://www.mingw.org/wiki/MSYS
+   - Set MINGW and MSYS bin directories in system PATH variable. e.g.: "C:\MinGW\bin;C:\MinGW\msys\1.0\bin"
+
+4) For EMU/HS devices, Texas Instruments MShield-DK with extension providing minimized PPA binary for OMAPFlash (not needed for GP development)
+
+
+5) For Windows USB driver (WinUSB), Windows driver kit (WDK) is needed. It can be found at:
+	
+	http://www.microsoft.com/downloads/en/details.aspx?displaylang=en&FamilyID=36a2630f-5d56-43b5-b996-7633f2ec14ff
+
+	Modify projects setting accordingly to the version of WDK downloaded.
+
+6. In Visual Studio Project > Build to build the target image
+

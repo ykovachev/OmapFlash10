@@ -1,0 +1,132 @@
+Platform configuration
+------------------------------------------
+
+The platform configuration data are created and parsed by OMAPFlash as follows:
+
+1) a device definition file holds the relevant register definitions for the OMAP device targeted (name and register address)
+2) a board configuration file holds a specification of the memories present on the board and of the operations used to configure the OMAP device 
+   targeted, based on a device definition file
+
+Device Definition File:
+------------------------------------------
+The device definition file basically holds a set of paired of labels and values. The labels can be used in the device configuration fil in place
+of the values in order to make the device configuration file more readable. The syntax is as follows
+
+PRM_CLKSRC_CTRL                           0x48307270
+CM_CLKEN_PLL                              0x48004D00 
+PRM_CLKSEL		                            0x48306D40 
+CM_CLKSEL1_PLL                            0x48004D40 
+CM_CLKSEL2_PLL                            0x48004D44 
+CM_CLKSEL3_PLL                            0x48004D48 
+
+A maximum of 1000 definition pairs can be present in a definition file.
+
+Board Configuration File:
+------------------------------------------
+The device configuration file may be based on a device definition file. It specifies a number of memories and a number of register oriented operations 
+that will be executed by the second loader of OMAPFlash before most other operations in order to configure such things as GPMC, SDRC and PinMuxing. 
+
+Memories are specified using the memory command:
+
+memory NAME driver DRIVER parameters PARAMETER1 VALUE1 PARAMETER2 VALUE2 ... PARAMETERN VALUEN
+
+An example of a memory specification could be:
+
+memory NAND driver Targets\Flash-Drivers\nand_onfi_16bit_8bit.bin parameters gpmc 0x6E000000 cs 1 address 0x28000000 bberase 0
+
+where the device name is NAND and the driver required to access it is present in the binary file nand_onfi_16bit_8bit.bin (part of this distribution). The
+driver needs a number of configuration parameters for correct operation. These are passed directly to driver as written on the line following the 'parameters'
+keyword. This distribution contains a number of driver binaries for various memory types. At present these are:
+
+  File      : nand_onfi_16bit_8bit.bin
+  Type      : NAND
+  Parameters: gpmc      (mandatory)               Base address of the GPMC in the OMAP
+              cs        (mandatory)               Chip select where the device is present (or GPMC-config index)
+              address   (mandatory)               Address of the device as mapped in the GPMC
+              bberase   (mandatory)               Erase bad blocks in the device (0 for no, 1 for yes). Caution: erasing bad blocks may cause an irreversible loss of manufacturing information.
+              onfi      (optional)                Read and use ONFI device description from the device (0 for no, 1 for yes).
+              bpp       (mandatory if onfi = 0)   Bytes per page if ONFI information is not used.
+              sbpp      (mandatory if onfi = 0)   Spare bytes per page if ONFI information is not used.
+              ppb       (mandatory if onfi = 0)   Pages per block if ONFI information is not used
+              bpl       (mandatory if onfi = 0)   Blocks per logical unit if ONFI information is not used
+              l         (mandatory if onfi = 0)   Logical unit count (only 1 supported by the driver)
+              acv       (mandatory if onfi = 0)   Address cycle values - 8 bit value with lower 4 bits for row and upper 4 bits for column.
+              f         (mandatory if onfi = 0)   Features - 16 bit value with bit 0 = 16 bit data operation, rest are don't-care
+  Examples  : memory NAND driver Targets\Flash-Drivers\nand_onfi_16bit_8bit.bin parameters gpmc 0x6E000000 cs 1 address 0x28000000 bberase 0
+              memory NAND driver Targets\Flash-Drivers\nand_onfi_16bit_8bit.bin parameters gpmc 0x6E000000 cs 1 address 0x28000000 bberase 0 onfi 0 bpp 2048 sbpp 64 ppb 64 bpl 4096 l 1 acv 0x23 f 0x0019
+              
+  File      : nor_intel_sibley_drv.bin
+  Type      : NOR
+  Parameters: address   (mandatory)               Base address of the device in the memory map
+  Examples  : memory SIBLEY0 driver Targets\Flash-Drivers\nor_intel_sibley_drv.bin parameters address 0x10000000
+
+  File      : onenand_drv.bin
+  Type      : OneNAND (inherently supports Samsung KFM1G16Q2M and KFM2G16Q2M, but parameters can be set to allow the driver to function with other devices)
+  Parameters: address   (mandatory)               Base address of the device as configured
+              bberase   (mandatory)               Erase bad blocks in the device (0 for no, 1 for yes). Caution: erasing bad blocks may cause an irreversible loss of manufacturing information.
+              w         (optional)                Sets the bus-width for the device and controls whether additional parameters are given. Currently only a 16-bit bus width is supported (value must be 16). 
+              b         (mandatory if w)          Number of blocks if device is not inherently supported
+              ppb       (mandatory if w)          Pages per block if device is not inherently supported
+              spp       (mandatory if w)          Sectors per page if device is not inherently supported
+              ssize     (mandatory if w)          Sector size in butes if device is not inherently supported
+  Examples  : memory ONENAND driver Targets\Flash-Drivers\onenand_drv.bin parameters address 0x20000000 bberase 0
+              memory ONENAND driver Targets\Flash-Drivers\onenand_drv.bin parameters address 0x20000000 bberase 0 w 16 b 2048 ppb 64 spp 4 ssize 512
+
+
+  File      : emmc_drv.bin
+  Type      : EMMC (OMAP4)
+  Parameters: sid       (mandatory)               MMC slot ID
+              width     (mandatory)               Width of data bus in bits
+              delay     (mandatory)               Loop delay on command access (default should be 9)
+  Example   : memory EMMC  driver Targets\Flash-Drivers\emmc_drv.bin parameters sid 1 width 4 delay 9
+
+For SDRAM, no driver is required, but the memory type must be specified with one parameter stating the base address in the memory map, e.g.:
+
+  memory SDRAM parameters address 0x80000000
+
+A number of register operation commands can be used to configure the OMAP device:
+
+A number of register operation commands can be used to configure the OMAP device:
+
+WRITE        - Write a value to a register
+MODIFY       - Modify the value of a register
+POLL_ZERO    - Poll a register value until zero
+POLL_NZERO   - Poll a register value until not zero
+POLL_VALUE   - Poll a register until value
+WAIT_N       - Loop n times in a simple while-loop (where n is a value from 0x0000 to 0xFFFF)
+SPIN         - Loop forever. This may be used for debugging.
+RPAPI        - Set the base address of the ROM code Public API
+MODE_16      - Use 16 bit register access mode
+MODE_32      - Use 32 bit register access mode
+DEBUG_REG    - Configuration of debug register for trace and status
+COPY         - Copy register content
+DEBUG_UART   - Set debug UART for traces
+HEAP_ADDR    - Set the base address of the heap in DDR
+
+The command structures are:
+
+WRITE        : WRITE REGISTER VALUE
+MODIFY       : MODIFY REGISTER MASK VALUE 
+POLL_ZERO    : POLL_ZERO REGISTER MASK
+POLL_NZERO   : POLL_NZERO REGISTER MASK
+POLL_VALUE   : POLL_VAL REGISTER MASK VALUE
+WAIT_N       : WAIT_N N
+SPIN         : SPIN
+RPAPI        : RPAPI ADDRESS
+MODE_16      : MODE_16
+MODE_32      : MODE_32
+DEBUG_REG    : DEBUG_REG ID ADDRESS MASK VALUE
+COPY         : COPY ADDRESS_FROM ADDRESS_TO
+DEBUG_UART   : DEBUG_UART UART_NO
+HEAP_ADDR    : HEAP_ADDR ADDRESS
+
+A directive can be used to point to a device definition file, e.g.:
+
+use definitions_omap3.txt
+
+Only one definition file can be used and it must be indicated before the first element using its definitions occurs in the configuration file.
+
+OMAPFlash will read the files and check whether certain optimizations can be done. The output to the target platform is limited to 2k of configuration
+data. A single write will use three 32 bit elements in the generated configuration data and a single modify wil take up four 32 bit elements. Multiple 
+writes in sequence will be compressed as will multiple modifies. For the modify command the compression will be even better if modifies using
+the same mask are grouped together and best if the grouped modfies are using the same mask and value.

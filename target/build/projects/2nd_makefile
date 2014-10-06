@@ -1,0 +1,307 @@
+################################################################################
+# Makfile - OMAPFlash 2nd
+################################################################################
+OS_TYPE :=
+
+# for now just assume Linux or Windows. You can overwrite if OS_TYPE is passed to makefile
+ifeq ($(OS_TYPE),)
+	ifeq (,$(findstring Linux,$(shell uname)))
+		OS_TYPE := WINDOWS
+	else
+		OS_TYPE := LINUX
+	endif
+endif
+
+# if TMS470_HOME is not set, then try to look for in /opt/TI directory 
+# and set to some default(CGT v4.6.6) value 
+ifeq ($(TMS470_HOME),)
+	ifeq ($(OS_TYPE), LINUX)
+		TMS470_HOME := "/opt/TI/TMS470CGT4.6.6"
+	else
+		TMS470_HOME := "C:/Program Files/Texas Instruments/TMS470 Code Generation Tools 4.6.6"
+	endif
+endif
+
+TMS470_HOME_QSPACE := $(subst ",,$(strip $(TMS470_HOME)) )
+TMS470_HOME_QSPACE := $(strip $(TMS470_HOME_QSPACE))
+
+TMS470_BINDIR := $(TMS470_HOME_QSPACE)/bin
+TMS470_INCDIR := $(TMS470_HOME_QSPACE)/include
+TMS470_LIBDIR := $(TMS470_HOME_QSPACE)/lib
+
+.LIBPATTERNS = lib%.lib lib%.so lib%.a
+
+VPATH += ../../../common/src ../../../dalfwrk/src ../../../dnld/src ../../../dnld/src/wrapper ../../../ll/src ../../src/boot ../../src/dnldstartup ../../src/platform/common ../../src/silicon/Common ../../src/silicon/omap3 ../../src/silicon/romapi 
+
+ifeq ($(OS_TYPE), LINUX)
+	CC := "$(TMS470_BINDIR)/cl470"
+else
+	CC := "$(TMS470_BINDIR)/cl470.exe"
+endif
+RM := rm -rf
+
+ifeq ($(CONFIG), OMAP3_GP)
+	OUTPUT_TYPE := dnld
+	CONFIG_TYPE := omap3_gp
+	OMAP_TYPE := OMAP3_GP
+	CHIP_TYPE := GP
+	LINKER_FILE := dnld_startup_omap3_gp.cmd
+endif
+
+ifeq ($(CONFIG), OMAP3_HS)
+	OUTPUT_TYPE := dnld
+	CONFIG_TYPE := omap3_hs
+	OMAP_TYPE := OMAP3_HS
+	CHIP_TYPE := HS
+	LINKER_FILE := dnld_startup_omap3_hs.cmd
+endif
+
+ifeq ($(CONFIG), OMAP4_GP)
+	OUTPUT_TYPE := dnld
+	CONFIG_TYPE := omap4_gp
+	OMAP_TYPE := OMAP4_GP
+	CHIP_TYPE := GP
+	LINKER_FILE := dnld_startup_omap4_gp.cmd
+endif
+
+ifeq ($(CONFIG), OMAP4_HS)
+	OUTPUT_TYPE := dnld
+	CONFIG_TYPE := omap4_hs
+	OMAP_TYPE := OMAP4_HS
+	CHIP_TYPE := HS
+	LINKER_FILE := dnld_startup_omap4_hs.cmd
+endif
+
+ifeq ($(CONFIG), OMAP4_MT)
+	OUTPUT_TYPE := mt
+	CONFIG_TYPE := omap4_hs
+	OMAP_TYPE := OMAP4_MT
+	CHIP_TYPE := HS
+	LINKER_FILE := dnld_startup_omap4_hs.cmd
+endif
+
+ifeq ($(CONFIG), OMAP5_GP)
+	OUTPUT_TYPE := dnld
+	CONFIG_TYPE := omap5_gp
+	OMAP_TYPE := OMAP5_GP
+	CHIP_TYPE := GP
+	LINKER_FILE := dnld_startup_omap5_gp.cmd
+endif
+
+ifeq ($(CONFIG), OMAP5_HS)
+	OUTPUT_TYPE := dnld
+	CONFIG_TYPE := omap5_hs
+	OMAP_TYPE := OMAP5_HS
+	CHIP_TYPE := HS
+	LINKER_FILE := dnld_startup_omap5_hs.cmd
+endif
+
+ifeq ($(CONFIG), OMAP5_MT)
+	OUTPUT_TYPE := mt
+	CONFIG_TYPE := omap5_hs
+	OMAP_TYPE := OMAP5_MT
+	CHIP_TYPE := HS
+	LINKER_FILE := dnld_startup_omap5_hs.cmd
+endif
+
+ifeq ($(OMAP_TYPE), OMAP3_GP)
+	SIGN_FILE_PREFIX := sign_3630
+endif
+
+ifeq ($(OMAP_TYPE), OMAP3_HS)
+	SIGN_FILE_PREFIX := sign_3630
+endif
+
+ifeq ($(OMAP_TYPE), OMAP4_GP)
+	SIGN_FILE_PREFIX := sign_4430
+endif
+
+ifeq ($(OMAP_TYPE), OMAP4_HS)
+	SIGN_FILE_PREFIX := sign_4430
+endif
+
+ifeq ($(OMAP_TYPE), OMAP4_MT)
+	SIGN_FILE_PREFIX := sign_4430
+endif
+
+ifeq ($(OMAP_TYPE), OMAP5_GP)
+	SIGN_FILE_PREFIX := sign_5430
+endif
+
+ifeq ($(OMAP_TYPE), OMAP5_HS)
+	SIGN_FILE_PREFIX := sign_5430
+endif
+
+ifeq ($(OMAP_TYPE), OMAP5_MT)
+	SIGN_FILE_PREFIX := sign_5430
+endif
+
+ifeq ($(CHIP_TYPE), HS)
+	SIGN_FILE := $(SIGN_FILE_PREFIX)_hs.sh
+endif
+
+ifeq ($(CHIP_TYPE), GP)
+	SIGN_FILE := $(SIGN_FILE_PREFIX)_gp.sh
+endif
+
+TARGET_NAME := $(OUTPUT_TYPE)_startup_$(CONFIG_TYPE)
+
+ifeq ($(OMAP_TYPE), OMAP3_GP)
+	OUT_BINDIR := ../../../_out_/bin/omap3/Debug
+endif
+
+ifeq ($(OMAP_TYPE), OMAP3_HS)
+	OUT_BINDIR := ../../../_out_/bin/omap3/Debug
+endif
+
+ifeq ($(OMAP_TYPE), OMAP4_GP)
+	OUT_BINDIR := ../../../_out_/bin/omap4/Debug
+endif
+
+ifeq ($(OMAP_TYPE), OMAP4_HS)
+	OUT_BINDIR := ../../../_out_/bin/omap4/Debug
+endif
+
+ifeq ($(OMAP_TYPE), OMAP4_MT)
+	OUT_BINDIR := ../../../_out_/bin/omap4/Debug
+endif
+
+ifeq ($(OMAP_TYPE), OMAP5_GP)
+	OUT_BINDIR := ../../../_out_/bin/omap5/Debug
+endif
+
+ifeq ($(OMAP_TYPE), OMAP5_HS)
+	OUT_BINDIR := ../../../_out_/bin/omap5/Debug
+endif
+
+ifeq ($(OMAP_TYPE), OMAP5_MT)
+	OUT_BINDIR := ../../../_out_/bin/omap5/Debug
+endif
+
+OUT_OBJDIR := ../../../_out_/obj/$(OUTPUT_TYPE)_$(CONFIG_TYPE)/Debug
+
+dummy := $(shell test -d $(OUT_BINDIR) || mkdir -p $(OUT_BINDIR))
+dummy := $(shell test -d $(OUT_OBJDIR) || mkdir -p $(OUT_OBJDIR))
+
+C_SRCS += \
+../../../common/src/adler32.c	\
+../../../dnld/src/dnld.c	\
+../../../dnld/src/wrapper/disp.c	\
+../../../ll/src/ll.c	\
+../../src/boot/dnld_start.s 	\
+../../src/dnldstartup/init.c	\
+../../src/dnldstartup/omapconfig.c	\
+../../src/dnldstartup/debug.c	\
+../../src/dnldstartup/mem.c	\
+../../src/silicon/Common/clk.c	\
+../../src/silicon/Common/interrupt.c	\
+../../src/silicon/omap3/uart.c	\
+../../src/silicon/romapi/romapi_uart.c	\
+../../src/silicon/romapi/romapi_usb.c	\
+
+
+OBJS += \
+$(OUT_OBJDIR)/adler32.obj	\
+$(OUT_OBJDIR)/dnld.obj	\
+$(OUT_OBJDIR)/disp.obj	\
+$(OUT_OBJDIR)/ll.obj	\
+$(OUT_OBJDIR)/dnld_start.obj	\
+$(OUT_OBJDIR)/init.obj	\
+$(OUT_OBJDIR)/omapconfig.obj	\
+$(OUT_OBJDIR)/debug.obj	\
+$(OUT_OBJDIR)/mem.obj	\
+$(OUT_OBJDIR)/clk.obj	\
+$(OUT_OBJDIR)/uart.obj	\
+$(OUT_OBJDIR)/romapi_uart.obj	\
+$(OUT_OBJDIR)/romapi_usb.obj	\
+
+
+
+#### OMAP3 GP #########
+CFLAGS_OMAP3_GP += -addpll3_1_enable=1 -g -o3 -fr"$(OUT_OBJDIR)" -b -me -mt -mv7a8 --abi=ti_arm9_abi --gcc --issue_remarks --display_error_number --diag_suppress=880 --diag_suppress=195 -al
+IFLAGS_OMAP3_GP += -i"../../../disp/inc/" -i"../../../utils/inc/" -i"../../../common/inc/" -i"../../../dalfwrk/src/devices/inc" -i"../../../target/src/silicon/Common/" -i"../../../target/src/silicon/omap3/" -i"../../../target/src/silicon/romapi/" -i"../../../ll/inc/" -i"../../../flashdrv/inc" -i"../../../dalfwrk/inc" -i"../../src/testsuite/inc" -i"../../../dnld/inc" -i"../../src/silicon/omap3430" -i"../../src/boot" -i"../../src/platform/common" -i"../../src/dnldstartup" -i"$(TMS470_INCDIR)" 
+DFLAGS_OMAP3_GP += -d"SECOND_DNLD_BUILD" -d"OMAP3_GP" -d"ROMAPI" -d"_DEBUG"
+LFLAGS_OMAP3_GP += --abi=ti_arm9_abi -z -c -e_reset -m"$(OUT_BINDIR)/$(TARGET_NAME).map" -o"$(OUT_BINDIR)/$(TARGET_NAME).out" -w -x -i"../../_out_/lib/Debug"
+
+#### OMAP3 HS #########
+CFLAGS_OMAP3_HS += -addpll3_1_enable=1 -g -o3 -fr"$(OUT_OBJDIR)" -b -me -mt -mv7a8 --abi=ti_arm9_abi --gcc --issue_remarks --display_error_number --diag_suppress=880 --diag_suppress=195 -al
+IFLAGS_OMAP3_HS += -i"../../../disp/inc/" -i"../../../utils/inc/" -i"../../../common/inc/" -i"../../../dalfwrk/src/devices/inc" -i"../../../target/src/silicon/Common/" -i"../../../target/src/silicon/omap3/" -i"../../../target/src/silicon/romapi/" -i"../../../ll/inc/" -i"../../../flashdrv/inc" -i"../../../dalfwrk/inc" -i"../../src/testsuite/inc" -i"../../../dnld/inc" -i"../../src/silicon/omap3430" -i"../../src/boot" -i"../../src/platform/common" -i"../../src/dnldstartup" -i"$(TMS470_INCDIR)" 
+DFLAGS_OMAP3_HS += -d"SECOND_DNLD_BUILD" -d"OMAP3_HS" -d"ROMAPI" -d"DISABLE_TRACE" -d"DISABLE_UART" -d"SECURE_DEVICE"
+LFLAGS_OMAP3_HS += --abi=ti_arm9_abi -z -c -e_reset -m"$(OUT_BINDIR)/$(TARGET_NAME).map" -o"$(OUT_BINDIR)/$(TARGET_NAME).out" -w -x -i"../../_out_/lib/Debug"
+
+#### OMAP4 GP #########
+CFLAGS_OMAP4_GP += -addpll3_1_enable=1 -g -o3 -fr"$(OUT_OBJDIR)" -b -me -mt -mv7a8 --abi=ti_arm9_abi --gcc --issue_remarks --display_error_number --diag_suppress=880 --diag_suppress=195 -al
+IFLAGS_OMAP4_GP += -i"../../../disp/inc/" -i"../../../utils/inc/" -i"../../../common/inc/" -i"../../../dalfwrk/src/devices/inc" -i"../../../target/src/silicon/Common/" -i"../../../target/src/silicon/omap3/" -i"../../../target/src/silicon/romapi/" -i"../../../ll/inc/" -i"../../../flashdrv/inc" -i"../../../dalfwrk/inc" -i"../../src/testsuite/inc" -i"../../../dnld/inc" -i"../../src/silicon/omap3430" -i"../../src/boot" -i"../../src/platform/common" -i"../../src/dnldstartup" -i"$(TMS470_INCDIR)" 
+DFLAGS_OMAP4_GP += -d"SECOND_DNLD_BUILD" -d"OMAP4_GP" -d"ROMAPI" -d"_DEBUG"
+LFLAGS_OMAP4_GP += --abi=ti_arm9_abi -z -c -e_reset -m"$(OUT_BINDIR)/$(TARGET_NAME).map" -o"$(OUT_BINDIR)/$(TARGET_NAME).out" -w -x -i"../../_out_/lib/Debug"
+
+#### OMAP4 HS #########
+CFLAGS_OMAP4_HS += -addpll3_1_enable=1 -g -o3 -fr"$(OUT_OBJDIR)" -b -me -mt -mv7a8 --abi=ti_arm9_abi --gcc --issue_remarks --display_error_number --diag_suppress=880 --diag_suppress=195 -al -px 
+IFLAGS_OMAP4_HS += -i"../../../disp/inc/" -i"../../../utils/inc/" -i"../../../common/inc/" -i"../../../dalfwrk/src/devices/inc" -i"../../../target/src/silicon/Common/" -i"../../../target/src/silicon/omap3/" -i"../../../target/src/silicon/romapi/" -i"../../../ll/inc/" -i"../../../flashdrv/inc" -i"../../../dalfwrk/inc" -i"../../src/testsuite/inc" -i"../../../dnld/inc" -i"../../src/silicon/omap3430" -i"../../src/boot" -i"../../src/platform/common" -i"../../src/dnldstartup" -i"$(TMS470_INCDIR)"
+DFLAGS_OMAP4_HS += -d"SECOND_DNLD_BUILD" -d"OMAP4_HS" -d"ROMAPI" -d"NDEBUG" -d"DISABLE_UART" 
+LFLAGS_OMAP4_HS += --abi=ti_arm9_abi -z -c -e_reset -m"$(OUT_BINDIR)/$(TARGET_NAME).map" -o"$(OUT_BINDIR)/$(TARGET_NAME).out" -w -x -i"../../_out_/lib/Debug"
+
+#### OMAP4 MT #########
+CFLAGS_OMAP4_MT += -addpll3_1_enable=1 -g -o3 -fr"$(OUT_OBJDIR)" -b -me -mt -mv7a8 --abi=ti_arm9_abi --gcc --issue_remarks --display_error_number --diag_suppress=880 --diag_suppress=195 -al -px 
+IFLAGS_OMAP4_MT += -i"../../../disp/inc/" -i"../../../utils/inc/" -i"../../../common/inc/" -i"../../../dalfwrk/src/devices/inc" -i"../../../target/src/silicon/Common/" -i"../../../target/src/silicon/omap3/" -i"../../../target/src/silicon/romapi/" -i"../../../ll/inc/" -i"../../../flashdrv/inc" -i"../../../dalfwrk/inc" -i"../../src/testsuite/inc" -i"../../../dnld/inc" -i"../../src/silicon/omap3430" -i"../../src/boot" -i"../../src/platform/common" -i"../../src/dnldstartup" -i"$(TMS470_INCDIR)"
+DFLAGS_OMAP4_MT += -d"SECOND_DNLD_BUILD" -d"OMAP4_MT" -d"ROMAPI" -d"NDEBUG" -d"DISABLE_UART" 
+LFLAGS_OMAP4_MT += --abi=ti_arm9_abi -z -c -e_reset -m"$(OUT_BINDIR)/$(TARGET_NAME).map" -o"$(OUT_BINDIR)/$(TARGET_NAME).out" -w -x -i"../../_out_/lib/Debug"
+
+#### OMAP5 GP #########
+CFLAGS_OMAP5_GP += -addpll3_1_enable=1 -g -o3 -fr"$(OUT_OBJDIR)" -b -me -mt -mv7a8 --abi=ti_arm9_abi --gcc --issue_remarks --display_error_number --diag_suppress=880 --diag_suppress=195 -al
+IFLAGS_OMAP5_GP += -i"../../../disp/inc/" -i"../../../utils/inc/" -i"../../../common/inc/" -i"../../../dalfwrk/src/devices/inc" -i"../../../target/src/silicon/Common/" -i"../../../target/src/silicon/omap3/" -i"../../../target/src/silicon/romapi/" -i"../../../ll/inc/" -i"../../../flashdrv/inc" -i"../../../dalfwrk/inc" -i"../../src/testsuite/inc" -i"../../../dnld/inc" -i"../../src/silicon/omap3430" -i"../../src/boot" -i"../../src/platform/common" -i"../../src/dnldstartup" -i"$(TMS470_INCDIR)" 
+DFLAGS_OMAP5_GP += -d"SECOND_DNLD_BUILD" -d"OMAP5_GP" -d"ROMAPI" -d"_DEBUG"
+LFLAGS_OMAP5_GP += --abi=ti_arm9_abi -z -c -e_reset -m"$(OUT_BINDIR)/$(TARGET_NAME).map" -o"$(OUT_BINDIR)/$(TARGET_NAME).out" -w -x -i"../../_out_/lib/Debug"
+
+#### OMAP5 HS #########
+CFLAGS_OMAP5_HS += -addpll3_1_enable=1 -g -o3 -fr"$(OUT_OBJDIR)" -b -me -mt -mv7a8 --abi=ti_arm9_abi --gcc --issue_remarks --display_error_number --diag_suppress=880 --diag_suppress=195 -al -px 
+IFLAGS_OMAP5_HS += -i"../../../disp/inc/" -i"../../../utils/inc/" -i"../../../common/inc/" -i"../../../dalfwrk/src/devices/inc" -i"../../../target/src/silicon/Common/" -i"../../../target/src/silicon/omap3/" -i"../../../target/src/silicon/romapi/" -i"../../../ll/inc/" -i"../../../flashdrv/inc" -i"../../../dalfwrk/inc" -i"../../src/testsuite/inc" -i"../../../dnld/inc" -i"../../src/silicon/omap3430" -i"../../src/boot" -i"../../src/platform/common" -i"../../src/dnldstartup" -i"$(TMS470_INCDIR)"
+DFLAGS_OMAP5_HS += -d"SECOND_DNLD_BUILD" -d"OMAP5_HS" -d"ROMAPI" -d"NDEBUG" -d"DISABLE_UART" 
+LFLAGS_OMAP5_HS += --abi=ti_arm9_abi -z -c -e_reset -m"$(OUT_BINDIR)/$(TARGET_NAME).map" -o"$(OUT_BINDIR)/$(TARGET_NAME).out" -w -x -i"../../_out_/lib/Debug"
+
+#### OMAP5 MT #########
+CFLAGS_OMAP5_MT += -addpll3_1_enable=1 -g -o3 -fr"$(OUT_OBJDIR)" -b -me -mt -mv7a8 --abi=ti_arm9_abi --gcc --issue_remarks --display_error_number --diag_suppress=880 --diag_suppress=195 -al -px 
+IFLAGS_OMAP5_MT += -i"../../../disp/inc/" -i"../../../utils/inc/" -i"../../../common/inc/" -i"../../../dalfwrk/src/devices/inc" -i"../../../target/src/silicon/Common/" -i"../../../target/src/silicon/omap3/" -i"../../../target/src/silicon/romapi/" -i"../../../ll/inc/" -i"../../../flashdrv/inc" -i"../../../dalfwrk/inc" -i"../../src/testsuite/inc" -i"../../../dnld/inc" -i"../../src/silicon/omap3430" -i"../../src/boot" -i"../../src/platform/common" -i"../../src/dnldstartup" -i"$(TMS470_INCDIR)"
+DFLAGS_OMAP5_MT += -d"SECOND_DNLD_BUILD" -d"OMAP5_MT" -d"ROMAPI" -d"NDEBUG" -d"DISABLE_UART" 
+LFLAGS_OMAP5_MT += --abi=ti_arm9_abi -z -c -e_reset -m"$(OUT_BINDIR)/$(TARGET_NAME).map" -o"$(OUT_BINDIR)/$(TARGET_NAME).out" -w -x -i"../../_out_/lib/Debug"
+
+# Each subdirectory must supply rules for building sources it contributes
+$(OUT_OBJDIR)/%.obj: %.c
+#	@echo 'CONFIG is $(CONFIG) CONFIG_TYPE:$(CONFIG_TYPE) OMAP_TYPE:$(OMAP_TYPE) CHIP_TYPE:$(CHIP_TYPE)'
+	@echo 'Building file: $<'
+	$(CC) $(CFLAGS_$(OMAP_TYPE)) $(IFLAGS_$(OMAP_TYPE)) $(DFLAGS_$(OMAP_TYPE)) "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+$(OUT_OBJDIR)/%.obj: %.s
+#	@echo 'CONFIG is $(CONFIG)'
+	@echo 'Building file: $<'
+	$(CC) $(CFLAGS_$(OMAP_TYPE)) $(IFLAGS_$(OMAP_TYPE)) $(DFLAGS_$(OMAP_TYPE)) "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+###############################################################################
+
+# All Target
+all: $(TARGET_NAME).out 
+
+$(TARGET_NAME).out: $(OBJS) 
+	@echo 'Building target: $@'
+	@echo 'Dependencies are $^'
+	@echo 'Invoking: Linker'
+	$(CC) $(LFLAGS_$(OMAP_TYPE)) $(OBJS) -i"$(TMS470_LIBDIR)" -i"../linker" -l$(LINKER_FILE) -lrts32e.lib
+	@echo ' '
+	@echo 'Finished building target: $@'
+	@echo 'Signing the 2nd file: $@'
+	../../../target/build/projects/$(SIGN_FILE) $(TARGET_NAME)
+
+# Other Targets
+clean:
+	-@echo 'make Clean'
+	-$(RM) $(OBJS) $(OUT_BINDIR)/$(TARGET_NAME).out 
+	-@echo 'Finished Clean'
+	-@echo ' '
+
+.PHONY: all clean 
+.SECONDARY:
+
+

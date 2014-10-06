@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{e1834d7d-e441-44f9-b7c0-63bed3496f22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assembler Files">
+      <UniqueIdentifier>{74b86e00-8c2d-4bce-9642-0d6a3b85d78a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\common\src\adler32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dnldstartup\debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dnld\src\wrapper\disp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dnld\src\dnld.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dnldstartup\init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ll\src\ll.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dnldstartup\omapconfig.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\silicon\romapi\romapi_uart.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\silicon\romapi\romapi_usb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\silicon\omap3\uart.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simulation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dnldstartup\mem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\silicon\Common\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\disp\inc\csst_tgt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dnldstartup\debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\dnld\inc\disp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\dnld\inc\dnld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\inc\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\flashdrv\inc\flash_drv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dnldstartup\init.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ll\inc\ll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dnldstartup\omapconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\silicon\romapi\romapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\silicon\romapi\romapi_3430.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\silicon\romapi\romapi_4430.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\silicon\romapi\romapi_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\silicon\romapi\romcode_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\silicon\Common\silicon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\silicon\Common\silicon_3430.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\silicon\Common\silicon_4430.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\silicon\Common\silicon_emif.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\silicon\Common\silicon_gpmc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\silicon\Common\silicon_sdrc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\inc\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\silicon\omap3\uart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\inc\compiler.h">
+      <Filter>Assembler Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simulation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dnldstartup\mem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\inc\adler32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\silicon\romapi\romapi_5430.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\cmd_simulation_compiler.pl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\pjt_simulation_compiler.pl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\build\tms470out_to_vs9out.pl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\src\boot\dnld_start.s">
+      <Filter>Assembler Files</Filter>
+    </None>
+    <None Include="..\..\src\silicon\Common\mmu.s">
+      <Filter>Assembler Files</Filter>
+    </None>
+    <None Include="..\..\build\projects\2nd_makefile">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\build\projects\make_all_2nd">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\_out_\bin\omap3\Debug\dnld_startup_omap3_hs.map">
+      <Filter>Generated Files</Filter>
+    </None>
+    <None Include="..\..\..\_out_\bin\omap3\Debug\dnld_startup_omap3_gp.map">
+      <Filter>Generated Files</Filter>
+    </None>
+    <None Include="..\..\..\_out_\bin\omap4\Debug\dnld_startup_omap4_hs.map">
+      <Filter>Generated Files</Filter>
+    </None>
+    <None Include="..\..\..\_out_\bin\omap4\Debug\mt_startup_omap4_hs.map">
+      <Filter>Generated Files</Filter>
+    </None>
+    <None Include="..\..\..\_out_\bin\omap4\Debug\dnld_startup_omap4_gp.map">
+      <Filter>Generated Files</Filter>
+    </None>
+    <None Include="..\..\..\_out_\bin\omap5\Debug\dnld_startup_omap5_hs.map">
+      <Filter>Generated Files</Filter>
+    </None>
+    <None Include="..\..\..\_out_\bin\omap5\Debug\mt_startup_omap5_hs.map">
+      <Filter>Generated Files</Filter>
+    </None>
+    <None Include="..\..\..\_out_\bin\omap5\Debug\dnld_startup_omap5_gp.map">
+      <Filter>Generated Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CMD_Simulation_Compilation_ Include="..\..\build\linker\dnld_startup_omap3_gp.cmd">
+      <Filter>Resource Files</Filter>
+    </CMD_Simulation_Compilation_>
+    <CMD_Simulation_Compilation_ Include="..\..\build\linker\dnld_startup_omap3_hs.cmd">
+      <Filter>Resource Files</Filter>
+    </CMD_Simulation_Compilation_>
+    <CMD_Simulation_Compilation_ Include="..\..\build\linker\dnld_startup_omap4_hs.cmd">
+      <Filter>Resource Files</Filter>
+    </CMD_Simulation_Compilation_>
+    <CMD_Simulation_Compilation_ Include="..\..\build\linker\dnld_startup_omap4_gp.cmd">
+      <Filter>Resource Files</Filter>
+    </CMD_Simulation_Compilation_>
+    <CMD_Simulation_Compilation_ Include="..\..\build\linker\dnld_startup_omap5_hs.cmd">
+      <Filter>Resource Files</Filter>
+    </CMD_Simulation_Compilation_>
+    <CMD_Simulation_Compilation_ Include="..\..\build\linker\dnld_startup_omap5_gp.cmd">
+      <Filter>Resource Files</Filter>
+    </CMD_Simulation_Compilation_>
+  </ItemGroup>
+</Project>

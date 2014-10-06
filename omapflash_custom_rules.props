@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup
+    Condition="'$(PJT_Simulation_Compilation_BeforeTargets)' == '' and '$(PJT_Simulation_Compilation_AfterTargets)' == '' and '$(ConfigurationType)' != 'Makefile'">
+    <PJT_Simulation_Compilation_BeforeTargets>Midl</PJT_Simulation_Compilation_BeforeTargets>
+    <PJT_Simulation_Compilation_AfterTargets>CustomBuild</PJT_Simulation_Compilation_AfterTargets>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PJT_Simulation_Compilation_DependsOn
+      Condition="'$(ConfigurationType)' != 'Makefile'">_SelectedFiles;$(PJT_Simulation_Compilation_DependsOn)</PJT_Simulation_Compilation_DependsOn>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <PJT_Simulation_Compilation_>
+      <CommandLineTemplate>perl $(SolutionDir)pjt_simulation_compiler.pl %(FullPath)</CommandLineTemplate>
+      <Outputs>%(Filename).c</Outputs>
+      <ExecutionDescription>PJT Simulation Compilation </ExecutionDescription>
+      <AdditionalDependencies>pjt_simulation_compiler.pl</AdditionalDependencies>
+    </PJT_Simulation_Compilation_>
+  </ItemDefinitionGroup>
+  <PropertyGroup
+    Condition="'$(CMD_Simulation_Compilation_BeforeTargets)' == '' and '$(CMD_Simulation_Compilation_AfterTargets)' == '' and '$(ConfigurationType)' != 'Makefile'">
+    <CMD_Simulation_Compilation_BeforeTargets>Midl</CMD_Simulation_Compilation_BeforeTargets>
+    <CMD_Simulation_Compilation_AfterTargets>CustomBuild</CMD_Simulation_Compilation_AfterTargets>
+  </PropertyGroup>
+  <PropertyGroup>
+    <CMD_Simulation_Compilation_DependsOn
+      Condition="'$(ConfigurationType)' != 'Makefile'">_SelectedFiles;$(CMD_Simulation_Compilation_DependsOn)</CMD_Simulation_Compilation_DependsOn>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <CMD_Simulation_Compilation_>
+      <CommandLineTemplate>perl $(SolutionDir)cmd_simulation_compiler.pl %(FullPath)</CommandLineTemplate>
+      <Outputs>%(Filename).c</Outputs>
+      <ExecutionDescription>CMD Simulation Compilation </ExecutionDescription>
+      <AdditionalDependencies>cmd_simulation_compiler.pl</AdditionalDependencies>
+    </CMD_Simulation_Compilation_>
+  </ItemDefinitionGroup>
+</Project>

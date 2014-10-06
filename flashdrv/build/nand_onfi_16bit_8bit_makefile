@@ -1,0 +1,118 @@
+################################################################################
+# Makfile - OMAPFlash NOR Driver (Intel Sibley)
+################################################################################
+OS_TYPE :=
+
+# for now just assume Linux or Windows. You can overwrite if OS_TYPE is passed to makefile
+ifeq ($(OS_TYPE),)
+	ifeq (,$(findstring Linux,$(shell uname)))
+		OS_TYPE := WINDOWS
+	else
+		OS_TYPE := LINUX
+	endif
+endif
+
+# if TMS470_HOME is not set, then try to set to some default(CGT v4.6.6) value
+ifeq ($(TMS470_HOME),)
+	ifeq ($(OS_TYPE), LINUX)
+		TMS470_HOME := "/opt/TI/TMS470CGT4.6.6"
+	else
+		TMS470_HOME := "C:/Program Files/Texas Instruments/TMS470 Code Generation Tools 4.6.6"
+	endif
+endif
+
+TMS470_HOME_QSPACE := $(subst ",,$(strip $(TMS470_HOME)) )
+TMS470_HOME_QSPACE := $(strip $(TMS470_HOME_QSPACE))
+
+TMS470_BINDIR := $(TMS470_HOME_QSPACE)/bin
+TMS470_INCDIR := $(TMS470_HOME_QSPACE)/include
+TMS470_LIBDIR := $(TMS470_HOME_QSPACE)/lib
+
+.LIBPATTERNS = lib%.lib lib%.so lib%.a
+VPATH += ../../target/src/platform/common:../../target/src/silicon/omap3:../../dalfwrk/src/devices/i2c:../../dalfwrk/src/devices/triton2:../../dalfwrk/src:../../utils/src:../../_clib_:../src
+
+ifeq ($(OS_TYPE), LINUX)
+	CC := "$(TMS470_BINDIR)/cl470"
+	OMAPFILECONVERT = omapfileconvert
+else
+	CC := "$(TMS470_BINDIR)/cl470.exe"
+	OMAPFILECONVERT = omapfileconvert.exe
+endif
+RM := rm -rf
+OUT_BINDIR := ../../_out_/bin/flashdrv
+OUT_OBJDIR := ../../_out_/obj/flashdrv
+TYPE := Debug
+TARGET_NAME := nand_onfi_16bit_8bit
+
+
+dummy := $(shell test -d $(OUT_BINDIR)/$(TYPE) || mkdir -p $(OUT_BINDIR)/$(TYPE))
+dummy := $(shell test -d $(OUT_OBJDIR)/$(TYPE) || mkdir -p $(OUT_OBJDIR)/$(TYPE))
+
+C_SRCS += \
+../src/nand_onfi_16bit_8bit.c		\
+../src/drv_config.c			\
+
+OBJS +=							\
+$(OUT_OBJDIR)/$(TYPE)/nand_onfi_16bit_8bit.obj	\
+$(OUT_OBJDIR)/$(TYPE)/drv_config.obj		\
+
+CFLAGS_Debug += -g -fr"$(OUT_OBJDIR)/$(TYPE)" -me -mt -mv4 --gcc
+
+CFLAGS_Release += -pm -pdv -o3 -fr"$(OUT_OBJDIR)/$(TYPE)" -me -mt -mv4 --gcc --symdebug:none
+
+
+IFLAGS_Debug += -i"../../utils/inc/" -i"../../common/inc/" -i"../../flashdrv/inc/" -i"../../dnld/inc/" -i"../../dalfwrk/inc/" -i"../../target/src/platform/3430sdp" -i"../../target/src/silicon/common/" -i"../../disp/inc" -i"$(TMS470_INCDIR)" 
+
+IFLAGS_Release += -i"../../utils/inc/" -i"../../disp/inc/" -i"../../../common/inc/" -i"../../flashdrv/inc/" -i"../../../common/sapinc/" -i"../../target/src/silicon/Common/" -i"../../dnld/inc/" -i"../../dalfwrk/inc/" -i"$(TMS470_INCDIR)" 
+
+DFLAGS_Debug += -d"_DEBUG" -d"DOWNLOAD_DRIVER" 
+
+DFLAGS_Release += -d"DOWNLOAD_DRIVER" 
+
+LFLAGS_Debug += -z -q -m"$(OUT_BINDIR)/$(TYPE)/nand_onfi_16bit_8bit.map" -o"$(OUT_BINDIR)/$(TYPE)/nand_onfi_16bit_8bit.out" -w -x
+
+LFLAGS_Release += -z -q -m"$(OUT_BINDIR)/$(TYPE)/nand_onfi_16bit_8bit.map" -o"$(OUT_BINDIR)/$(TYPE)/nand_onfi_16bit_8bit.out" -w -x
+
+
+# Each subdirectory must supply rules for building sources it contributes
+$(OUT_OBJDIR)/$(TYPE)/%.obj: %.c
+	@echo 'Building file: $<'
+	$(CC) $(CFLAGS_$(TYPE)) $(IFLAGS_$(TYPE)) $(DFLAGS_$(TYPE)) "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+###############################################################################
+
+# All Target
+all: $(TARGET_NAME).out $(TARGET_NAME).bin
+
+$(TARGET_NAME).out: $(OBJS) 
+	@echo 'Building target: $@'
+	@echo 'Dependencies are $^'
+	@echo 'Invoking: Linker'
+	$(CC) $(LFLAGS_$(TYPE)) $(OBJS) -i"$(TMS470_LIBDIR)" -lflash_drv.cmd -lrts32e.lib
+ 	@echo 'Finished building target: $@'
+	@echo ' '
+
+# To-do
+#["Release" Settings]
+#FinalBuildCmd=$(Proj_dir)/../../utils/build/copy_to_host_dir flashdrv nand_onfi_16bit_8bit.out Release Targets/Flash-Drivers
+
+
+$(TARGET_NAME).bin: $(TARGET_NAME).out
+	@echo 'Generating binary file: $@'
+	@echo 'Deleting old binary file...'
+	$(RM) ../../host/Targets/Flash-Drivers/$(TARGET_NAME).bin
+	../../host/omapfileconvert/$(OMAPFILECONVERT) -i  $(OUT_BINDIR)/$(TYPE)/$(TARGET_NAME).out -o ../../host/Targets/Flash-Drivers/$(TARGET_NAME).bin
+
+# Other Targets
+clean:
+	-@echo 'make Clean'
+	-$(RM) $(OBJS) $(OUT_BINDIR)/$(TYPE)/$(TARGET_NAME).out ../../host/Targets/Flash-Drivers/$(TARGET_NAME).bin
+	-@echo 'Finished Clean'
+	-@echo ' '
+
+.PHONY: all clean dependents
+.SECONDARY:
+
+

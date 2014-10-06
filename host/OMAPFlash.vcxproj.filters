@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="SampleScripts">
+      <UniqueIdentifier>{7ade883b-5941-4eaa-b293-9110298addd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SampleScripts\3630">
+      <UniqueIdentifier>{f48bfadd-dc8b-4cb3-996a-faa1ddff83da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SampleScripts\4430">
+      <UniqueIdentifier>{c0ec5e66-27cd-45d0-88e7-7411feb65017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OMAP Definitions">
+      <UniqueIdentifier>{5c85b152-8ccf-4ac4-876a-c12204c99e0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Board Configurations">
+      <UniqueIdentifier>{60333d1c-1bb3-413f-821f-06ffe5339073}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\src\adler32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="board_configuration.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootimg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fastboot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="omap_protocol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="omap_windows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usb_windows.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util_windows.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="peripheralboot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="memory_partitions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="board_configuration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootimg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fastboot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="omap_protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unistd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util_windows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="memory_partitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\doc\development_environment.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\doc\fastboot_protocol.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="License.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\doc\omapflash_protocol.rtf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="platform_configuration.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\doc\porting_guide.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\release.bat">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="uart.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="uboot_emmc.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="uboot_ram.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="SampleScripts\3630\uart_nand.txt">
+      <Filter>SampleScripts\3630</Filter>
+    </None>
+    <None Include="SampleScripts\3630\uart_nor.txt">
+      <Filter>SampleScripts\3630</Filter>
+    </None>
+    <None Include="SampleScripts\3630\uart_onenand.txt">
+      <Filter>SampleScripts\3630</Filter>
+    </None>
+    <None Include="SampleScripts\3630\usb_nand.txt">
+      <Filter>SampleScripts\3630</Filter>
+    </None>
+    <None Include="SampleScripts\3630\usb_nor.txt">
+      <Filter>SampleScripts\3630</Filter>
+    </None>
+    <None Include="SampleScripts\3630\usb_onenand.txt">
+      <Filter>SampleScripts\3630</Filter>
+    </None>
+    <None Include="SampleScripts\3630\usb_sdram.txt">
+      <Filter>SampleScripts\3630</Filter>
+    </None>
+    <None Include="SampleScripts\4430\kozio.bat">
+      <Filter>SampleScripts\4430</Filter>
+    </None>
+    <None Include="SampleScripts\4430\kozio.txt">
+      <Filter>SampleScripts\4430</Filter>
+    </None>
+    <None Include="SampleScripts\4430\kozio_ch.txt">
+      <Filter>SampleScripts\4430</Filter>
+    </None>
+    <None Include="SampleScripts\4430\kozio_emmc.txt">
+      <Filter>SampleScripts\4430</Filter>
+    </None>
+    <None Include="SampleScripts\4430\kozio_emmc_upload.txt">
+      <Filter>SampleScripts\4430</Filter>
+    </None>
+    <None Include="SampleScripts\4430\uart_emmc.txt">
+      <Filter>SampleScripts\4430</Filter>
+    </None>
+    <None Include="SampleScripts\4430\uboot_emmc.txt">
+      <Filter>SampleScripts\4430</Filter>
+    </None>
+    <None Include="SampleScripts\4430\uboot_ram.txt">
+      <Filter>SampleScripts\4430</Filter>
+    </None>
+    <None Include="SampleScripts\4430\usb_emmc.txt">
+      <Filter>SampleScripts\4430</Filter>
+    </None>
+    <None Include="SampleScripts\4430\usb_sdram.txt">
+      <Filter>SampleScripts\4430</Filter>
+    </None>
+    <None Include="Targets\Definitions\definitions_omap3.txt">
+      <Filter>OMAP Definitions</Filter>
+    </None>
+    <None Include="Targets\Definitions\definitions_omap4.txt">
+      <Filter>OMAP Definitions</Filter>
+    </None>
+    <None Include="Targets\Configurations\configuration_evm37xx_hynix_2g.txt">
+      <Filter>Board Configurations</Filter>
+    </None>
+    <None Include="Targets\Configurations\configuration_evm4430es1.0_elpida_4g.txt">
+      <Filter>Board Configurations</Filter>
+    </None>
+    <None Include="Targets\Configurations\configuration_evm4430es2.0_elpida_4g.txt">
+      <Filter>Board Configurations</Filter>
+    </None>
+    <None Include="Targets\Configurations\configuration_evm4460es1.0_elpida_8g.txt">
+      <Filter>Board Configurations</Filter>
+    </None>
+    <None Include="Targets\Configurations\configuration_sdp3630_hynix_4g.txt">
+      <Filter>Board Configurations</Filter>
+    </None>
+    <None Include="Targets\Configurations\configuration_sdp3630_hynix_8g.txt">
+      <Filter>Board Configurations</Filter>
+    </None>
+    <None Include="Targets\Configurations\configuration_zoom2_micron_2g.txt">
+      <Filter>Board Configurations</Filter>
+    </None>
+    <None Include="Targets\Configurations\configuration_zoom3_hynix_4g.txt">
+      <Filter>Board Configurations</Filter>
+    </None>
+    <None Include="Targets\Configurations\configuration_zoom3_hynix_8g.txt">
+      <Filter>Board Configurations</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="readme.txt" />
+    <None Include="Targets\Configurations\configuration_evm4470es1.0_elpida_8g.txt">
+      <Filter>Board Configurations</Filter>
+    </None>
+    <None Include="Targets\Definitions\definitions_omap5.txt">
+      <Filter>OMAP Definitions</Filter>
+    </None>
+    <None Include="Targets\Configurations\configuration_evm5430es1.0_samsung_16g.txt">
+      <Filter>Board Configurations</Filter>
+    </None>
+    <None Include="Targets\Configurations\configuration_evm5432es1.0_elpida_16g.txt">
+      <Filter>Board Configurations</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="omapflash2nd.txt">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3336 @@
+﻿"DeployProject"
+{
+"VSVersion" = "3:800"
+"ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
+"IsWebType" = "8:FALSE"
+"ProjectName" = "8:OMAPFlashInstaller"
+"LanguageId" = "3:1033"
+"CodePage" = "3:1252"
+"UILanguageId" = "3:1033"
+"SccProjectName" = "8:"
+"SccLocalPath" = "8:"
+"SccAuxPath" = "8:"
+"SccProvider" = "8:"
+    "Hierarchy"
+    {
+        "Entry"
+        {
+        "MsmKey" = "8:_06155DD12DA54CCB89254AEFD8A77186"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_068940F5D20F4B64B1E0E7D3AAFF6F68"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0777F0AA8810448188861C7841DF6E33"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0809BC6D69D64321B08FE73CBBFEC3B7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0B528ACCE5DA4703BA0C4165AB1DF671"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1454C3ABE1414E05BCDB68AE85011EC8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_15E6F5D3B5184EA69DA44DB2539D5C2F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_161ECC1B061341DAB75958711BF74905"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_189FA137434140C1BF2DC0D281B2BFA2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1EE3E527F5D34A87987C4EB2A77ABCB9"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_25ACE3DEBC624B7ABA530A84D5AA94B3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2622879B4F644C4EBB49A6B1E3EB1F88"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_27D0C620E37B4F0B81CF3A5B0D9E574F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_280DB0C881EE445DB6C309C3F644C01B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2D7DE6A268E840178467DFD9D605E573"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_300FF9F11EE94ABB959530ECE4D9C1D8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3260837E9AB54A6BB818FAA6308587B8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3413B3A7108A4DF4ABAE75C7738CFEC4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3443B8295AB8437BB818DB419428D1AB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_34A8E9D4DF8B40FD8CB83952954B0810"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_35362FCE854E4FDAB56AD82FB8A18387"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3E7EB74C70954277AACC8D7A67F0C1BD"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_427CCEB26B66444F87D9A7998FA0B276"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_44197B32608F4C36991C4A0344D79C43"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_445446623E954C5EBE91A2FE50011404"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_44FCC51C5F284CD799CD61B28650F241"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4697BA8F8B9F4A64A31F32E2B30D4C8B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4DC0B2B5B2654A288BAC275E8A33F90A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5115D69D306E4BB79AE6753B48A512DF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_516336390B0147D59E17736293072DE7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_59544A9AC26A42338680C93460162ECD"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5A44A5AEEA9A4A4992F8CB847DF98F53"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5C1451092A3B4F97BC250CB30B6F6F4E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5C1772FE918342B0B5460845FEDDDF45"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5C82CAE40E953492E81C5C5975531D9D"
+        "OwnerKey" = "8:_BAA0C99D66134E858983BE99CCDD304E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5F3D53FD19C14D71B71BCC927549DFAC"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6491D311981A405C938DBEDBD8C52AFF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6EB18D09F187457BBCCBF45D9EB2CC12"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_70EEA0B818E744D2A478DB97DF944E17"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_73265D442E2E47CD826BAB060747CB06"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7342BC028F244D3185A82D035E397C54"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7425934B3BA7480EAE6CF7DC791760F5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_75D50DB6AB5E43DC9DADC7FB901E6A7B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7611EDED8B864DB49DD3317F50646171"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7F6FF9D3950B4E17B3E9AB82E3C5C22A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8157F79B279C4AA18409E04862736DE3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_83CE8FD8F06C498398EB42B2DE7295AD"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_855E181F95984178AA62FF8206B83136"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_85FADB9A568D4D98BD05A11D72063750"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_889EA32A8F9C431A9CEC79B48F200748"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_89E0EFC60FCE49098421B79C528B8AA4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8CF54FD318A0419E8278B812AD541977"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8D1DA508527D456B86641FF3A316C2C2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8FC2556A5B284B50A0E9F28044B5077D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_911BA73E0808410490154C71D39E295E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_977CBA88A51B48AD994613415C16DF83"
+        "OwnerKey" = "8:_BAA0C99D66134E858983BE99CCDD304E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_97B1C00CB0E54FDC84B36BC5135B11A0"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9D6D229FEBA64C5C9F4F63DC7DF23C0A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9E78BD37667B40203DE350210CA866D8"
+        "OwnerKey" = "8:_EB7F8A9E5B05491189BB6F834197F76C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A1AC0576865742338010F3233867636B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AC5B759230364AE59B7963E4D3033285"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B2AE014D984C4263B6463FA317BD4CFB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B49B97B6122F445F817D0D352EB8E396"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B816392576C04AC89EDDD0F164057010"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BAA0C99D66134E858983BE99CCDD304E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BB0B9FD8FB214D75876B7EED3EC44A8F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BD946EDD023648808A2C82F5E655EA6C"
+        "OwnerKey" = "8:_EB7F8A9E5B05491189BB6F834197F76C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BE4DEE921BEF4E54B467837A82C76C2F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BFBE9AA364AC42878F02A6B26FC7DAC5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C061F0C384AA4F92896143E9D7EA3031"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C31D2EB890FA40BC917DC5251E32394E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C3513BFFB5F94475B017120A5DE17762"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C5E842C65EFE49E0846DF9F916C86B5D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C6220156026F4551A2B3F345C1265423"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C921714297234429B3C0232EDB1BF0CD"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D0192F98E44D40C6978410F518F7615A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D06C750DB05E45CFB99ADF092DBD9A59"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D48104EEC28F49DA981C309C7919F8D2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DB97E4F797574150A37CF75EEEAE9B0C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DDD6B75033724E5D9E4E0CD7261E46D4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E398E8032FC1491699742CD8EC4D08EE"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EA02B1FAEFF74911AFDAAE55A5BA240C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EB7F8A9E5B05491189BB6F834197F76C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EC74D8D4586A4F3A818D7CC5253F8295"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_ECCD99ACFEDB4DB8934870E9F21A20D7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EDB794F0C4B94C2D943089D4A7B3F462"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F3460FEA9CBF4CCFA4F2384E3F380E91"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F70CDECA260DEF160533E06CAC0D9E74"
+        "OwnerKey" = "8:_EB7F8A9E5B05491189BB6F834197F76C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F73DD09E75324D25BEC177E3F6588BDB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F89332336BFB49759A7300B7C61007D2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FB560D7CE53340FCA1B91D6379BC0866"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+    }
+    "Configurations"
+    {
+        "Debug"
+        {
+        "DisplayName" = "8:Debug"
+        "IsDebugOnly" = "11:TRUE"
+        "IsReleaseOnly" = "11:FALSE"
+        "OutputFilename" = "8:Debug\\OMAPFlashInstaller.msi"
+        "PackageFilesAs" = "3:2"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "Compression" = "3:2"
+        "SignOutput" = "11:FALSE"
+        "CertificateFile" = "8:"
+        "PrivateKeyFile" = "8:"
+        "TimeStampServer" = "8:"
+        "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Net.Framework.3.5"
+                    {
+                    "Name" = "8:.NET Framework 3.5"
+                    "ProductCode" = "8:Microsoft.Net.Framework.3.5"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Visual.C++.9.0.x86"
+                    {
+                    "Name" = "8:Visual C++ Runtime Libraries (x86)"
+                    "ProductCode" = "8:Microsoft.Visual.C++.9.0.x86"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
+            }
+        }
+        "Release"
+        {
+        "DisplayName" = "8:Release"
+        "IsDebugOnly" = "11:FALSE"
+        "IsReleaseOnly" = "11:TRUE"
+        "OutputFilename" = "8:Release\\OMAPFlashInstaller.msi"
+        "PackageFilesAs" = "3:2"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "Compression" = "3:2"
+        "SignOutput" = "11:FALSE"
+        "CertificateFile" = "8:"
+        "PrivateKeyFile" = "8:"
+        "TimeStampServer" = "8:"
+        "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Net.Framework.3.5"
+                    {
+                    "Name" = "8:.NET Framework 3.5"
+                    "ProductCode" = "8:Microsoft.Net.Framework.3.5"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
+            }
+        }
+    }
+    "Deployable"
+    {
+        "CustomAction"
+        {
+        }
+        "DefaultFeature"
+        {
+        "Name" = "8:DefaultFeature"
+        "Title" = "8:"
+        "Description" = "8:"
+        }
+        "ExternalPersistence"
+        {
+            "LaunchCondition"
+            {
+            }
+        }
+        "File"
+        {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_06155DD12DA54CCB89254AEFD8A77186"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Flash-Drivers\\nand_onfi_16bit_8bit.bin"
+            "TargetName" = "8:nand_onfi_16bit_8bit.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_77CDE520EBE84460BF91087CD3DDCC10"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_068940F5D20F4B64B1E0E7D3AAFF6F68"
+            {
+            "SourcePath" = "8:..\\host\\test_data\\pattern_1M.bin"
+            "TargetName" = "8:pattern_1M.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_19D3D7E6C09D489AAAE2005B80FFA8EF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0777F0AA8810448188861C7841DF6E33"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_evm4460es1.0_elpida_8g.txt"
+            "TargetName" = "8:configuration_evm4460es1.0_elpida_8g.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0809BC6D69D64321B08FE73CBBFEC3B7"
+            {
+            "SourcePath" = "8:..\\usb_drv_windows\\i386\\WdfCoInstaller01009.dll"
+            "TargetName" = "8:WdfCoInstaller01009.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_54514BAE2E0E4A98B0CCEE79FD6D339D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0B528ACCE5DA4703BA0C4165AB1DF671"
+            {
+            "SourcePath" = "8:..\\host\\License.rtf"
+            "TargetName" = "8:License.rtf"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1454C3ABE1414E05BCDB68AE85011EC8"
+            {
+            "SourcePath" = "8:..\\host\\SampleScripts\\3630\\usb_onenand.txt"
+            "TargetName" = "8:usb_onenand.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_B6230E8378DF4F36A9AB2D3EC73F0BD3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_15E6F5D3B5184EA69DA44DB2539D5C2F"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_evm5432es1.0.txt"
+            "TargetName" = "8:configuration_evm5432es1.0.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_161ECC1B061341DAB75958711BF74905"
+            {
+            "SourcePath" = "8:..\\host\\SampleScripts\\4430\\usb_sdram.txt"
+            "TargetName" = "8:usb_sdram.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_CE8D743EF14A4470B1D97A382AC2ED36"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_189FA137434140C1BF2DC0D281B2BFA2"
+            {
+            "SourcePath" = "8:..\\android\\usb_driver\\amd64\\WdfCoInstaller01007.dll"
+            "TargetName" = "8:WdfCoInstaller01007.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_44E46A4043C54E95AB14C5F8C202BB24"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1EE3E527F5D34A87987C4EB2A77ABCB9"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\dnld_startup_omap5_hs_es1.s2.signed.2nd"
+            "TargetName" = "8:dnld_startup_omap5_hs_es1.s2.signed.2nd"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_25ACE3DEBC624B7ABA530A84D5AA94B3"
+            {
+            "SourcePath" = "8:..\\host\\SampleScripts\\4430\\usb_emmc_android.txt"
+            "TargetName" = "8:usb_emmc_android.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_CE8D743EF14A4470B1D97A382AC2ED36"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2622879B4F644C4EBB49A6B1E3EB1F88"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\dnld_startup_omap4_gp.2nd"
+            "TargetName" = "8:dnld_startup_omap4_gp.2nd"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_27D0C620E37B4F0B81CF3A5B0D9E574F"
+            {
+            "SourcePath" = "8:..\\doc\\porting_guide.txt"
+            "TargetName" = "8:porting_guide.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_280DB0C881EE445DB6C309C3F644C01B"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Definitions\\definitions_omap5.txt"
+            "TargetName" = "8:definitions_omap5.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_1BFA4F1BC57B49CA9ECE01FC79D0EB8B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2D7DE6A268E840178467DFD9D605E573"
+            {
+            "SourcePath" = "8:..\\host\\SampleScripts\\4430\\uboot_ram.txt"
+            "TargetName" = "8:uboot_ram.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_CE8D743EF14A4470B1D97A382AC2ED36"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_300FF9F11EE94ABB959530ECE4D9C1D8"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_zoom3_hynix_4g.txt"
+            "TargetName" = "8:configuration_zoom3_hynix_4g.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3260837E9AB54A6BB818FAA6308587B8"
+            {
+            "SourcePath" = "8:..\\usb_drv_windows\\i386\\winusbcoinstaller2.dll"
+            "TargetName" = "8:winusbcoinstaller2.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_54514BAE2E0E4A98B0CCEE79FD6D339D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3413B3A7108A4DF4ABAE75C7738CFEC4"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_evm4470es1.0_elpida_8g.txt"
+            "TargetName" = "8:configuration_evm4470es1.0_elpida_8g.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3443B8295AB8437BB818DB419428D1AB"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Flash-Drivers\\nor_numonyx_drv.bin"
+            "TargetName" = "8:nor_numonyx_drv.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_77CDE520EBE84460BF91087CD3DDCC10"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_34A8E9D4DF8B40FD8CB83952954B0810"
+            {
+            "SourcePath" = "8:..\\android\\usb_driver\\amd64\\WinUSBCoInstaller.dll"
+            "TargetName" = "8:WinUSBCoInstaller.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_44E46A4043C54E95AB14C5F8C202BB24"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_35362FCE854E4FDAB56AD82FB8A18387"
+            {
+            "SourcePath" = "8:..\\host\\Guide.txt"
+            "TargetName" = "8:Guide.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3E7EB74C70954277AACC8D7A67F0C1BD"
+            {
+            "SourcePath" = "8:..\\host\\SampleScripts\\3630\\usb_nor.txt"
+            "TargetName" = "8:usb_nor.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_B6230E8378DF4F36A9AB2D3EC73F0BD3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_427CCEB26B66444F87D9A7998FA0B276"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Definitions\\definitions_omap4.txt"
+            "TargetName" = "8:definitions_omap4.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_1BFA4F1BC57B49CA9ECE01FC79D0EB8B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_44197B32608F4C36991C4A0344D79C43"
+            {
+            "SourcePath" = "8:..\\host\\test_data\\pattern_1K.bin"
+            "TargetName" = "8:pattern_1K.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_19D3D7E6C09D489AAAE2005B80FFA8EF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_445446623E954C5EBE91A2FE50011404"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\dnld_startup_omap5_hs.raw"
+            "TargetName" = "8:dnld_startup_omap5_hs.raw"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_44FCC51C5F284CD799CD61B28650F241"
+            {
+            "SourcePath" = "8:..\\host\\SampleScripts\\3630\\usb_sdram.txt"
+            "TargetName" = "8:usb_sdram.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_B6230E8378DF4F36A9AB2D3EC73F0BD3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4697BA8F8B9F4A64A31F32E2B30D4C8B"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\dnld_startup_omap4_hs.raw"
+            "TargetName" = "8:dnld_startup_omap4_hs.raw"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4DC0B2B5B2654A288BAC275E8A33F90A"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\dnld_startup_omap4_hs_es1.s1.signed.2nd"
+            "TargetName" = "8:dnld_startup_omap4_hs_es1.s1.signed.2nd"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5115D69D306E4BB79AE6753B48A512DF"
+            {
+            "SourcePath" = "8:..\\android\\usb_driver\\amd64\\NOTICE"
+            "TargetName" = "8:NOTICE"
+            "Tag" = "8:"
+            "Folder" = "8:_44E46A4043C54E95AB14C5F8C202BB24"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_516336390B0147D59E17736293072DE7"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\mt_startup_omap4_hs.raw"
+            "TargetName" = "8:mt_startup_omap4_hs.raw"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_59544A9AC26A42338680C93460162ECD"
+            {
+            "SourcePath" = "8:..\\host\\test_data\\pattern1.bin"
+            "TargetName" = "8:pattern1.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_19D3D7E6C09D489AAAE2005B80FFA8EF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5A44A5AEEA9A4A4992F8CB847DF98F53"
+            {
+            "SourcePath" = "8:..\\usb_drv_windows\\amd64\\winusbcoinstaller2.dll"
+            "TargetName" = "8:winusbcoinstaller2.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_298431DC54C9461DBB329B0E8EF001DF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5C1451092A3B4F97BC250CB30B6F6F4E"
+            {
+            "SourcePath" = "8:..\\host\\License.txt"
+            "TargetName" = "8:License.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5C1772FE918342B0B5460845FEDDDF45"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\mt_startup_omap5_hs.raw"
+            "TargetName" = "8:mt_startup_omap5_hs.raw"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5C82CAE40E953492E81C5C5975531D9D"
+            {
+            "SourcePath" = "8:AdbWinApi.DLL"
+            "TargetName" = "8:AdbWinApi.DLL"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5F3D53FD19C14D71B71BCC927549DFAC"
+            {
+            "SourcePath" = "8:..\\host\\SampleScripts\\3630\\uart_nor.txt"
+            "TargetName" = "8:uart_nor.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_B6230E8378DF4F36A9AB2D3EC73F0BD3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6491D311981A405C938DBEDBD8C52AFF"
+            {
+            "SourcePath" = "8:..\\android\\usb_driver\\i386\\WdfCoInstaller01007.dll"
+            "TargetName" = "8:WdfCoInstaller01007.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_C1A598B6CEE44B58BBDF1B5215AFC426"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6EB18D09F187457BBCCBF45D9EB2CC12"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_evm37xx_hynix_2g.txt"
+            "TargetName" = "8:configuration_evm37xx_hynix_2g.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_70EEA0B818E744D2A478DB97DF944E17"
+            {
+            "SourcePath" = "8:..\\host\\SampleScripts\\3630\\uart_onenand.txt"
+            "TargetName" = "8:uart_onenand.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_B6230E8378DF4F36A9AB2D3EC73F0BD3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_73265D442E2E47CD826BAB060747CB06"
+            {
+            "SourcePath" = "8:..\\android\\development\\windows\\usb\\api\\AdbWinUsbApi.dll"
+            "TargetName" = "8:AdbWinUsbApi.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7342BC028F244D3185A82D035E397C54"
+            {
+            "SourcePath" = "8:..\\host\\SampleScripts\\3630\\uart_nand.txt"
+            "TargetName" = "8:uart_nand.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_B6230E8378DF4F36A9AB2D3EC73F0BD3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7425934B3BA7480EAE6CF7DC791760F5"
+            {
+            "SourcePath" = "8:..\\host\\SampleScripts\\3630\\usb_nand.txt"
+            "TargetName" = "8:usb_nand.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_B6230E8378DF4F36A9AB2D3EC73F0BD3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_75D50DB6AB5E43DC9DADC7FB901E6A7B"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_evm5432es1.0_elpida_16g.txt"
+            "TargetName" = "8:configuration_evm5432es1.0_elpida_16g.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7611EDED8B864DB49DD3317F50646171"
+            {
+            "SourcePath" = "8:..\\host\\test_data\\pattern5.bin"
+            "TargetName" = "8:pattern5.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_19D3D7E6C09D489AAAE2005B80FFA8EF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7F6FF9D3950B4E17B3E9AB82E3C5C22A"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\dnld_startup_omap5_gp.2nd"
+            "TargetName" = "8:dnld_startup_omap5_gp.2nd"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8157F79B279C4AA18409E04862736DE3"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Flash-Drivers\\emmc_drv.bin"
+            "TargetName" = "8:emmc_drv.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_77CDE520EBE84460BF91087CD3DDCC10"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_83CE8FD8F06C498398EB42B2DE7295AD"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\mt_startup_omap4_hs_es2.s2.signed.2nd"
+            "TargetName" = "8:mt_startup_omap4_hs_es2.s2.signed.2nd"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_855E181F95984178AA62FF8206B83136"
+            {
+            "SourcePath" = "8:..\\android\\usb_driver\\amd64\\WUDFUpdate_01007.dll"
+            "TargetName" = "8:WUDFUpdate_01007.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_44E46A4043C54E95AB14C5F8C202BB24"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_85FADB9A568D4D98BD05A11D72063750"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Definitions\\definitions_omap3.txt"
+            "TargetName" = "8:definitions_omap3.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_1BFA4F1BC57B49CA9ECE01FC79D0EB8B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_889EA32A8F9C431A9CEC79B48F200748"
+            {
+            "SourcePath" = "8:..\\android\\usb_driver\\i386\\NOTICE"
+            "TargetName" = "8:NOTICE"
+            "Tag" = "8:"
+            "Folder" = "8:_C1A598B6CEE44B58BBDF1B5215AFC426"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_89E0EFC60FCE49098421B79C528B8AA4"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_evm5430es1.0_samsung_16g.txt"
+            "TargetName" = "8:configuration_evm5430es1.0_samsung_16g.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8CF54FD318A0419E8278B812AD541977"
+            {
+            "SourcePath" = "8:..\\android\\usb_driver\\i386\\WinUSBCoInstaller.dll"
+            "TargetName" = "8:WinUSBCoInstaller.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_C1A598B6CEE44B58BBDF1B5215AFC426"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8D1DA508527D456B86641FF3A316C2C2"
+            {
+            "SourcePath" = "8:..\\usb_drv_windows\\omap_winusb.inf"
+            "TargetName" = "8:omap_winusb.inf"
+            "Tag" = "8:"
+            "Folder" = "8:_CA47456FCD3542F8BB092DEDC74919FB"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8FC2556A5B284B50A0E9F28044B5077D"
+            {
+            "SourcePath" = "8:..\\host\\test_data\\pattern_10K.bin"
+            "TargetName" = "8:pattern_10K.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_19D3D7E6C09D489AAAE2005B80FFA8EF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_911BA73E0808410490154C71D39E295E"
+            {
+            "SourcePath" = "8:..\\host\\SampleScripts\\4430\\usb_emmc.txt"
+            "TargetName" = "8:usb_emmc.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_CE8D743EF14A4470B1D97A382AC2ED36"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_97B1C00CB0E54FDC84B36BC5135B11A0"
+            {
+            "SourcePath" = "8:..\\android\\development\\windows\\usb\\api\\AdbWinApi.dll"
+            "TargetName" = "8:AdbWinApi.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9D6D229FEBA64C5C9F4F63DC7DF23C0A"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\mt_startup_omap4_hs_es2.s1.signed.2nd"
+            "TargetName" = "8:mt_startup_omap4_hs_es2.s1.signed.2nd"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9E78BD37667B40203DE350210CA866D8"
+            {
+            "SourcePath" = "8:SETUPAPI.dll"
+            "TargetName" = "8:SETUPAPI.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A1AC0576865742338010F3233867636B"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Flash-Drivers\\nor_amd_drv.bin"
+            "TargetName" = "8:nor_amd_drv.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_77CDE520EBE84460BF91087CD3DDCC10"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AC5B759230364AE59B7963E4D3033285"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\mt_startup_omap4_hs_es1.s1.signed.2nd"
+            "TargetName" = "8:mt_startup_omap4_hs_es1.s1.signed.2nd"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B2AE014D984C4263B6463FA317BD4CFB"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_evm4430es1.0_elpida_4g.txt"
+            "TargetName" = "8:configuration_evm4430es1.0_elpida_4g.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B49B97B6122F445F817D0D352EB8E396"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\mt_startup_omap5_hs_es1.s2.signed.2nd"
+            "TargetName" = "8:mt_startup_omap5_hs_es1.s2.signed.2nd"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B816392576C04AC89EDDD0F164057010"
+            {
+            "SourcePath" = "8:..\\host\\test_data\\pattern4.bin"
+            "TargetName" = "8:pattern4.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_19D3D7E6C09D489AAAE2005B80FFA8EF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BB0B9FD8FB214D75876B7EED3EC44A8F"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\dnld_startup_omap3_hs.signed.2nd"
+            "TargetName" = "8:dnld_startup_omap3_hs.signed.2nd"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BE4DEE921BEF4E54B467837A82C76C2F"
+            {
+            "SourcePath" = "8:..\\host\\omapflash2nd.txt"
+            "TargetName" = "8:omapflash2nd.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BFBE9AA364AC42878F02A6B26FC7DAC5"
+            {
+            "SourcePath" = "8:..\\host\\test_data\\pattern2.bin"
+            "TargetName" = "8:pattern2.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_19D3D7E6C09D489AAAE2005B80FFA8EF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C061F0C384AA4F92896143E9D7EA3031"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Flash-Drivers\\bqfs_drv.bin"
+            "TargetName" = "8:bqfs_drv.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_77CDE520EBE84460BF91087CD3DDCC10"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C31D2EB890FA40BC917DC5251E32394E"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_zoom3_hynix_8g.txt"
+            "TargetName" = "8:configuration_zoom3_hynix_8g.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C3513BFFB5F94475B017120A5DE17762"
+            {
+            "SourcePath" = "8:..\\doc\\UserGuide\\OMAPFlash.txt"
+            "TargetName" = "8:OMAPFlash.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C5E842C65EFE49E0846DF9F916C86B5D"
+            {
+            "SourcePath" = "8:..\\host\\SampleScripts\\3430\\usb_nand.txt"
+            "TargetName" = "8:usb_nand.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EAA4DDE204EB4A47A502A0F6FE6E90E3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C6220156026F4551A2B3F345C1265423"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\dnld_startup_omap4_hs_es2.s1.signed.2nd"
+            "TargetName" = "8:dnld_startup_omap4_hs_es2.s1.signed.2nd"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C921714297234429B3C0232EDB1BF0CD"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_evm4430es2.0_elpida_4g.txt"
+            "TargetName" = "8:configuration_evm4430es2.0_elpida_4g.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D0192F98E44D40C6978410F518F7615A"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\dnld_startup_omap3_hs.raw"
+            "TargetName" = "8:dnld_startup_omap3_hs.raw"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D06C750DB05E45CFB99ADF092DBD9A59"
+            {
+            "SourcePath" = "8:..\\host\\readme.txt"
+            "TargetName" = "8:readme.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D48104EEC28F49DA981C309C7919F8D2"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\dnld_startup_omap4_hs_es2.s2.signed.2nd"
+            "TargetName" = "8:dnld_startup_omap4_hs_es2.s2.signed.2nd"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DB97E4F797574150A37CF75EEEAE9B0C"
+            {
+            "SourcePath" = "8:..\\usb_drv_windows\\amd64\\WdfCoInstaller01009.dll"
+            "TargetName" = "8:WdfCoInstaller01009.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_298431DC54C9461DBB329B0E8EF001DF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DDD6B75033724E5D9E4E0CD7261E46D4"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\2nd-Downloaders\\dnld_startup_omap3_gp.2nd"
+            "TargetName" = "8:dnld_startup_omap3_gp.2nd"
+            "Tag" = "8:"
+            "Folder" = "8:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E398E8032FC1491699742CD8EC4D08EE"
+            {
+            "SourcePath" = "8:..\\android\\usb_driver\\i386\\WUDFUpdate_01007.dll"
+            "TargetName" = "8:WUDFUpdate_01007.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_C1A598B6CEE44B58BBDF1B5215AFC426"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EA02B1FAEFF74911AFDAAE55A5BA240C"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_zoom2_micron_2g.txt"
+            "TargetName" = "8:configuration_zoom2_micron_2g.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EC74D8D4586A4F3A818D7CC5253F8295"
+            {
+            "SourcePath" = "8:..\\host\\SampleScripts\\3430\\usb_sdram.txt"
+            "TargetName" = "8:usb_sdram.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EAA4DDE204EB4A47A502A0F6FE6E90E3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ECCD99ACFEDB4DB8934870E9F21A20D7"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_evm5430es1.0.txt"
+            "TargetName" = "8:configuration_evm5430es1.0.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EDB794F0C4B94C2D943089D4A7B3F462"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_sdp3630_hynix_4g.txt"
+            "TargetName" = "8:configuration_sdp3630_hynix_4g.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F3460FEA9CBF4CCFA4F2384E3F380E91"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Configurations\\configuration_sdp3630_hynix_8g.txt"
+            "TargetName" = "8:configuration_sdp3630_hynix_8g.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_5B175AA483FC4E55888C7E2A752C26ED"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F70CDECA260DEF160533E06CAC0D9E74"
+            {
+            "SourcePath" = "8:WINUSB.DLL"
+            "TargetName" = "8:WINUSB.DLL"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F73DD09E75324D25BEC177E3F6588BDB"
+            {
+            "SourcePath" = "8:..\\android\\usb_driver\\android_winusb.inf"
+            "TargetName" = "8:android_winusb.inf"
+            "Tag" = "8:"
+            "Folder" = "8:_B7FA991858474F6B9753BB25D6FDE439"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F89332336BFB49759A7300B7C61007D2"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Flash-Drivers\\nor_intel_sibley_drv.bin"
+            "TargetName" = "8:nor_intel_sibley_drv.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_77CDE520EBE84460BF91087CD3DDCC10"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FB560D7CE53340FCA1B91D6379BC0866"
+            {
+            "SourcePath" = "8:..\\host\\Targets\\Flash-Drivers\\onenand_drv.bin"
+            "TargetName" = "8:onenand_drv.bin"
+            "Tag" = "8:"
+            "Folder" = "8:_77CDE520EBE84460BF91087CD3DDCC10"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+        }
+        "FileType"
+        {
+        }
+        "Folder"
+        {
+            "{1525181F-901A-416C-8A58-119130FE478E}:_0A8FE436463E45779E852D91DE561333"
+            {
+            "Name" = "8:#1916"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:DesktopFolder"
+                "Folders"
+                {
+                }
+            }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_6EB8D858F6C64253B97282BA3FD7A41D"
+            {
+            "Name" = "8:#1919"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:ProgramMenuFolder"
+                "Folders"
+                {
+                }
+            }
+            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_917E5E6304EF43B992942DD071E4AFE1"
+            {
+            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "Name" = "8:#1925"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:TARGETDIR"
+                "Folders"
+                {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_19D3D7E6C09D489AAAE2005B80FFA8EF"
+                    {
+                    "Name" = "8:test_data"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_8609C06AD38142C2B98AD074246FC08F"
+                        "Folders"
+                        {
+                        }
+                    }
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_5B7869D6379342A8B81C32B16C5EC7CE"
+                    {
+                    "Name" = "8:Targets"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_0534037E7E7746829A9B3B13D53BCF78"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_1BFA4F1BC57B49CA9ECE01FC79D0EB8B"
+                            {
+                            "Name" = "8:Definitions"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_D6A5664B69214CC4A2C1B5D20F2EA609"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_3AC42FDB5ED64D2592F93B80BC7C16F9"
+                            {
+                            "Name" = "8:2nd-Downloaders"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_26BB8F60E3A145A8ADBB507DF992CEC0"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_5B175AA483FC4E55888C7E2A752C26ED"
+                            {
+                            "Name" = "8:Configurations"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_6B922AE489D14FA590F7C494FFCAEFBC"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_77CDE520EBE84460BF91087CD3DDCC10"
+                            {
+                            "Name" = "8:Flash-Drivers"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_D0BEAF4958F44FE6861EE70C2CB25BD7"
+                                "Folders"
+                                {
+                                }
+                            }
+                        }
+                    }
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_9CECB8A76BF34636B207D67E572705A6"
+                    {
+                    "Name" = "8:SampleScripts"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_E7DFAA7C047D4FB1B6FB94066F0582BD"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_B6230E8378DF4F36A9AB2D3EC73F0BD3"
+                            {
+                            "Name" = "8:3630"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_5622DBC3E3A5409D953BE6F3CCE71738"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_CE8D743EF14A4470B1D97A382AC2ED36"
+                            {
+                            "Name" = "8:4430"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_2C0721198CC947E28BE746B1F4A8F1A0"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_EAA4DDE204EB4A47A502A0F6FE6E90E3"
+                            {
+                            "Name" = "8:3430"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_61D8CE5E979742AF8E09BECCB1601D29"
+                                "Folders"
+                                {
+                                }
+                            }
+                        }
+                    }
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_B7FA991858474F6B9753BB25D6FDE439"
+                    {
+                    "Name" = "8:usb_drv_android"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_B797E915C78A4252B31C9BF546560B76"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_44E46A4043C54E95AB14C5F8C202BB24"
+                            {
+                            "Name" = "8:amd64"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_B2F43EF0ADE940358FCADA809C8CBB63"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_C1A598B6CEE44B58BBDF1B5215AFC426"
+                            {
+                            "Name" = "8:i386"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_658C9B3D0D6C469DAD31D43CCE96B097"
+                                "Folders"
+                                {
+                                }
+                            }
+                        }
+                    }
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_CA47456FCD3542F8BB092DEDC74919FB"
+                    {
+                    "Name" = "8:usb_drv_windows"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_EDE11A574B944C6A99F6327698DA7CFA"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_298431DC54C9461DBB329B0E8EF001DF"
+                            {
+                            "Name" = "8:amd64"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_010A75E3375C42D0AB8F17EF20A7B350"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_54514BAE2E0E4A98B0CCEE79FD6D339D"
+                            {
+                            "Name" = "8:i386"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_A1F9B6E9D1DB40C0A4951111E3A01F23"
+                                "Folders"
+                                {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        "LaunchCondition"
+        {
+        }
+        "Locator"
+        {
+        }
+        "MsiBootstrapper"
+        {
+        "LangId" = "3:1033"
+        "RequiresElevation" = "11:FALSE"
+        }
+        "Product"
+        {
+        "Name" = "8:Microsoft Visual Studio"
+        "ProductName" = "8:OMAPFlash"
+        "ProductCode" = "8:{497A3C2A-737B-4392-93E4-4B571CFBAB75}"
+        "PackageCode" = "8:{329E1593-8EE5-43EA-A7A0-F2DB5B75AFE2}"
+        "UpgradeCode" = "8:{56C53B4D-712B-494D-A823-B00C2CB10C20}"
+        "AspNetVersion" = "8:4.0.30319.0"
+        "RestartWWWService" = "11:FALSE"
+        "RemovePreviousVersions" = "11:FALSE"
+        "DetectNewerInstalledVersion" = "11:TRUE"
+        "InstallAllUsers" = "11:FALSE"
+        "ProductVersion" = "8:1.0.0"
+        "Manufacturer" = "8:Texas Instruments"
+        "ARPHELPTELEPHONE" = "8:"
+        "ARPHELPLINK" = "8:"
+        "Title" = "8:OMAPFlashInstaller"
+        "Subject" = "8:"
+        "ARPCONTACT" = "8:Texas Instruments, Inc"
+        "Keywords" = "8:"
+        "ARPCOMMENTS" = "8:"
+        "ARPURLINFOABOUT" = "8:"
+        "ARPPRODUCTICON" = "8:"
+        "ARPIconIndex" = "3:0"
+        "SearchPath" = "8:"
+        "UseSystemSearchPath" = "11:TRUE"
+        "TargetPlatform" = "3:0"
+        "PreBuildEvent" = "8:"
+        "PostBuildEvent" = "8:"
+        "RunPostBuildEvent" = "3:0"
+        }
+        "Registry"
+        {
+            "HKLM"
+            {
+                "Keys"
+                {
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_8A0D57B67B3C4513BAD0A99DA43075B7"
+                    {
+                    "Name" = "8:Software"
+                    "Condition" = "8:"
+                    "AlwaysCreate" = "11:FALSE"
+                    "DeleteAtUninstall" = "11:FALSE"
+                    "Transitive" = "11:FALSE"
+                        "Keys"
+                        {
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_F81F632033FF4C6CB7D9129838055C55"
+                            {
+                            "Name" = "8:[Manufacturer]"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                        }
+                        "Values"
+                        {
+                        }
+                    }
+                }
+            }
+            "HKCU"
+            {
+                "Keys"
+                {
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_41BFD109605B4683AC7FDD60796E03DF"
+                    {
+                    "Name" = "8:Software"
+                    "Condition" = "8:"
+                    "AlwaysCreate" = "11:FALSE"
+                    "DeleteAtUninstall" = "11:FALSE"
+                    "Transitive" = "11:FALSE"
+                        "Keys"
+                        {
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_968A748795F14E78A7EC9EAB6DE38D1A"
+                            {
+                            "Name" = "8:[Manufacturer]"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                        }
+                        "Values"
+                        {
+                        }
+                    }
+                }
+            }
+            "HKCR"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKU"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKPU"
+            {
+                "Keys"
+                {
+                }
+            }
+        }
+        "Sequences"
+        {
+        }
+        "Shortcut"
+        {
+        }
+        "UserInterface"
+        {
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_1BBA8744F0384D2395069E24FC816BF4"
+            {
+            "Name" = "8:#1902"
+            "Sequence" = "3:1"
+            "Attributes" = "3:3"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_B99722FC551340FE958665229EB3D352"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Finished"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "UpdateText"
+                            {
+                            "Name" = "8:UpdateText"
+                            "DisplayName" = "8:#1058"
+                            "Description" = "8:#1158"
+                            "Type" = "3:15"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1258"
+                            "DefaultValue" = "8:#1258"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_2A89692CB10342B29F32F165492418EE"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdUserInterface.wim"
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_56007A957DEE466CBDC97D9061F7725F"
+            {
+            "Name" = "8:#1901"
+            "Sequence" = "3:1"
+            "Attributes" = "3:2"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_20460A5CFC8F4DAD887FED456C9DF668"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Progress"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "ShowProgress"
+                            {
+                            "Name" = "8:ShowProgress"
+                            "DisplayName" = "8:#1009"
+                            "Description" = "8:#1109"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_6C9785BBB9E24B74B5756894521351CD"
+            {
+            "Name" = "8:#1900"
+            "Sequence" = "3:1"
+            "Attributes" = "3:1"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_3CB66126DFD045D19142774696BEF66E"
+                    {
+                    "Sequence" = "3:200"
+                    "DisplayName" = "8:Installation Folder"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "InstallAllUsersVisible"
+                            {
+                            "Name" = "8:InstallAllUsersVisible"
+                            "DisplayName" = "8:#1059"
+                            "Description" = "8:#1159"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_3F3D37A96040450D8CF791BE76093BB6"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Welcome"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "CopyrightWarning"
+                            {
+                            "Name" = "8:CopyrightWarning"
+                            "DisplayName" = "8:#1002"
+                            "Description" = "8:#1102"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1202"
+                            "DefaultValue" = "8:#1202"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Welcome"
+                            {
+                            "Name" = "8:Welcome"
+                            "DisplayName" = "8:#1003"
+                            "Description" = "8:#1103"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1203"
+                            "DefaultValue" = "8:#1203"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_998D4E0B077D4C228F0956DF183A0185"
+                    {
+                    "Sequence" = "3:110"
+                    "DisplayName" = "8:License Agreement"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdLicenseDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "EulaText"
+                            {
+                            "Name" = "8:EulaText"
+                            "DisplayName" = "8:#1008"
+                            "Description" = "8:#1108"
+                            "Type" = "3:6"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:2"
+                            "Value" = "8:_0B528ACCE5DA4703BA0C4165AB1DF671"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Sunken"
+                            {
+                            "Name" = "8:Sunken"
+                            "DisplayName" = "8:#1007"
+                            "Description" = "8:#1107"
+                            "Type" = "3:5"
+                            "ContextData" = "8:4;True=4;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:4"
+                            "DefaultValue" = "3:4"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_F52A2FB88F7C406EBF4278D555D209BA"
+                    {
+                    "Sequence" = "3:300"
+                    "DisplayName" = "8:Confirm Installation"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_74951337CA4A453396A0B0108B739082"
+            {
+            "Name" = "8:#1901"
+            "Sequence" = "3:2"
+            "Attributes" = "3:2"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_58159A88C0EB4290B144DD8FCBF5A7BD"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Progress"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminProgressDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "ShowProgress"
+                            {
+                            "Name" = "8:ShowProgress"
+                            "DisplayName" = "8:#1009"
+                            "Description" = "8:#1109"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_A187A68D520E4C68AD526D4548158A14"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdBasicDialogs.wim"
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_A308482E347A41EDA8731F1375CDF5D2"
+            {
+            "Name" = "8:#1902"
+            "Sequence" = "3:2"
+            "Attributes" = "3:3"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_DBABBAD37BE746AA94598BEEC6972280"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Finished"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_E3F68241450844F49FA82FFA38E27343"
+            {
+            "Name" = "8:#1900"
+            "Sequence" = "3:2"
+            "Attributes" = "3:1"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_2F0E24E9AAC54685B79DF820D3FD9789"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Welcome"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminWelcomeDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "CopyrightWarning"
+                            {
+                            "Name" = "8:CopyrightWarning"
+                            "DisplayName" = "8:#1002"
+                            "Description" = "8:#1102"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1202"
+                            "DefaultValue" = "8:#1202"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Welcome"
+                            {
+                            "Name" = "8:Welcome"
+                            "DisplayName" = "8:#1003"
+                            "Description" = "8:#1103"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1203"
+                            "DefaultValue" = "8:#1203"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_42A099FFBE694834A1B94D1A146E33C0"
+                    {
+                    "Sequence" = "3:200"
+                    "DisplayName" = "8:Installation Folder"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_6BDE602D75C34F93A70CFC0EC9B89C85"
+                    {
+                    "Sequence" = "3:110"
+                    "DisplayName" = "8:License Agreement"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminLicenseDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "EulaText"
+                            {
+                            "Name" = "8:EulaText"
+                            "DisplayName" = "8:#1008"
+                            "Description" = "8:#1108"
+                            "Type" = "3:6"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:2"
+                            "Value" = "8:_0B528ACCE5DA4703BA0C4165AB1DF671"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Sunken"
+                            {
+                            "Name" = "8:Sunken"
+                            "DisplayName" = "8:#1007"
+                            "Description" = "8:#1107"
+                            "Type" = "3:5"
+                            "ContextData" = "8:4;True=4;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:4"
+                            "DefaultValue" = "3:4"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_FD0B0551657E4272B5D5C448F5B811F1"
+                    {
+                    "Sequence" = "3:300"
+                    "DisplayName" = "8:Confirm Installation"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminConfirmDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        "MergeModule"
+        {
+            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_977CBA88A51B48AD994613415C16DF83"
+            {
+            "UseDynamicProperties" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "SourcePath" = "8:Microsoft_VC100_CRT_x86.msm"
+                "Properties"
+                {
+                }
+            "LanguageId" = "3:0"
+            "Exclude" = "11:FALSE"
+            "Folder" = "8:"
+            "Feature" = "8:"
+            "IsolateTo" = "8:"
+            }
+            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_BD946EDD023648808A2C82F5E655EA6C"
+            {
+            "UseDynamicProperties" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "SourcePath" = "8:Microsoft_VC100_DebugCRT_x86.msm"
+                "Properties"
+                {
+                }
+            "LanguageId" = "3:0"
+            "Exclude" = "11:FALSE"
+            "Folder" = "8:"
+            "Feature" = "8:"
+            "IsolateTo" = "8:"
+            }
+        }
+        "ProjectOutput"
+        {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_BAA0C99D66134E858983BE99CCDD304E"
+            {
+            "SourcePath" = "8:..\\Debug\\OMAPFlash.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{109C8CD5-A26C-4DC3-BF0B-1C352C24330F}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EB7F8A9E5B05491189BB6F834197F76C"
+            {
+            "SourcePath" = "8:..\\Debug\\comdriver.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_917E5E6304EF43B992942DD071E4AFE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{5FE497AB-2DC8-44DF-8736-FA1D74EF50B3}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+        }
+    }
+}

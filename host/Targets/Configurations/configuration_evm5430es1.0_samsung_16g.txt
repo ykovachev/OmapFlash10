@@ -1,0 +1,459 @@
+# Specify platform memories
+                                                 
+memory       EMMC       driver Targets\Flash-Drivers\emmc_drv.bin parameters sid 1 width 8 delay 9 rpapi_base 0x00038400 mblock 1 ddr 1 sparse 1
+memory       EMMC_BP1   driver Targets\Flash-Drivers\emmc_drv.bin parameters sid 1 width 8 delay 9 rpapi_base 0x00038400 mblock 1 ddr 1 pt 1 sparse 1
+memory       BQFS       driver Targets\Flash-Drivers\bqfs_drv.bin parameters i2c_id 0 rpapi_base 0x00038400 clk32 0x4AE04030
+memory       SDRAM      parameters address 0x80000000
+                                                 
+# Partition definitions for sEVM
+# Specify partitions (memory, size, partition name) - can be used in chip_download cmd and/or for Android partition table (these offsets are for Android)
+# Note that if you use the 'oem format' command the partition table will end up in the first memory and location specified by the name '-'!
+
+#            memory   size (kB)      name
+partition    EMMC          128       -
+partition    EMMC          256       xloader
+partition    EMMC          256       bootloader
+partition    EMMC          128       misc
+partition    EMMC          384       -
+partition    EMMC        16384       efs
+partition    EMMC           16       crypto
+partition    EMMC         8192       recovery
+partition    EMMC         8192       boot
+partition    EMMC       524288       system
+partition    EMMC       262144       cache
+partition    EMMC     30000000       userdata
+
+# Get device definitions
+                                                 
+use          .\Targets\Definitions\definitions_omap5.txt 
+
+RPAPI_BASE   0x00038400                          
+HEAP_ADDR    HEAP_ADDR_16G
+
+MODE_32                                          
+
+WRITE        CM_EMIF_EMIF1_CLKCTRL                                           0x00000001
+WRITE        CM_EMIF_EMIF2_CLKCTRL                                           0x00000001
+POLL_VALUE   CM_EMIF_CLKSTCTRL                   0x00000700                  0x00000700
+
+# DMM/MA --------------------------------------------------------------------------------
+
+WRITE         DMM_LISA_MAP_REGISTER_0                         LISA_MAP0_2GBYTE_INTL128
+WRITE         DMM_LISA_MAP_REGISTER_1                         0x00000000
+WRITE         DMM_LISA_MAP_REGISTER_2                         0x00000000
+WRITE         DMM_LISA_MAP_REGISTER_3                         0x00000000
+                                                 
+COPY          DMM_LISA_MAP_REGISTER_0                         MA_LISA_MAP_REGISTER_0
+COPY          DMM_LISA_MAP_REGISTER_1                         MA_LISA_MAP_REGISTER_1
+COPY          DMM_LISA_MAP_REGISTER_2                         MA_LISA_MAP_REGISTER_2
+COPY          DMM_LISA_MAP_REGISTER_3                         MA_LISA_MAP_REGISTER_3
+
+
+# EFUSE configuration (untrimmed units) --------------------------------------------------
+
+WRITE CONTROL_EFUSE_1                                 0x45145100
+WRITE CONTROL_EFUSE_2                                 0x45145100
+WRITE CONTROL_EFUSE_3                                 0x45145100
+WRITE CONTROL_EFUSE_4                                 0x45145100
+                                                
+# DDR configuration ----------------------------------------------------------------------
+
+
+# ELPIDA_EDBA164B1PB1DF 4X4 MEMORY / SAMSUNG 4X4 MEMORY
+
+# DDR_IO__I_34OHM_SR_FASTEST__WD_DQ_NO_PULL_DQS_PULL_DOWN
+WRITE CTRL_MODULE_CORE_PAD_CONTROL_DDRCH1_0           0x80828082 
+WRITE CTRL_MODULE_CORE_PAD_CONTROL_DDRCH1_1           0x80828082
+WRITE CTRL_MODULE_CORE_PAD_CONTROL_DDRCH2_0           0x80828082
+WRITE CTRL_MODULE_CORE_PAD_CONTROL_DDRCH2_1           0x80828082
+
+# DDR_IO__I_34OHM_SR_FASTEST__WD_CK_CKE_NCS_CA_PULL_DOWN
+WRITE CONTROL_LPDDR2CH1_0                             0x82828200
+WRITE CONTROL_LPDDR2CH1_1                             0x82828200
+
+# DDR_IO_0__DQ_INT_NO_CAP + DDR_IO_0__DQ_INT_2UA_ALL + DDR_IO_0__DDR2_DQ_INT_EN_ALL__DDR3_CA_DIS_ALL
+WRITE CTRL_MODULE_CORE_PAD_CONTROL_DDRIO_0            0x00008421
+
+# DDR_IO_1__DQ_OUT_NO_CAP__DQ_INT_NO_CAP + DDR_IO_1__DQ_OUT_2UA__DQ_INT_2UA + DDR_IO_1__DQ_OUT_EN_ALL__DQ_INT_EN_ALL
+WRITE CTRL_MODULE_CORE_PAD_CONTROL_DDRIO_1            0x08421084
+
+# DDR_IO_2__CA_OUT_NO_CAP__CA_INT_NO_CAP + DDR_IO_2__CA_OUT_2UA__CA_INT_2UA + DDR_IO_2__CA_OUT_EN_ALL__CA_INT_EN_ALL
+WRITE CTRL_MODULE_CORE_PAD_CONTROL_DDRIO_2            0x08421000
+
+
+MODIFY CONTROL_EMIF1_SDRAM_CONFIG_EXT                 0x0000C100  0x0000C000
+MODIFY EMIF1_SDRAM_CONFIG_2                           0x48000000  0x00000000
+WRITE EMIF1_SDRAM_CONFIG                              0x988022BA
+# WRITE EMIF1_SDRAM_OUTPUT_IMPEDANCE_CALIBRATION_CONFIG 0x000B3215
+# WRITE EMIF1_TEMPERATURE_ALERT_CONFIG                  0x08000A05
+WRITE EMIF1_OCP_CONFIG                                0x0A500000
+WRITE EMIF1_READ_WRITE_EXECUTION_THRESHOLD            0x00000305
+# WRITE EMIF1_DDR_PHY_CONTROL_2                         0x00000000
+WRITE EMIF1_DDR_PHY_CONTROL_1                         0x0E38420D
+WRITE EMIF1_SDRAM_TIMING_1                            0x772F6873
+WRITE EMIF1_SDRAM_TIMING_2                            0x304A129A
+WRITE EMIF1_SDRAM_TIMING_3                            0x02F7E45F
+# WRITE EMIF1_POWER_MANAGEMENT_CONTROL                  0x00004040
+WRITE EMIF1_SDRAM_REFRESH_CONTROL                     0x0000081A
+WRITE EMIF1_DLL_CALIB_CTRL                            0x00050000
+WRITE EMIF1_EXT_PHY_CONTROL_1                         0x04020080
+WRITE EMIF1_EXT_PHY_CONTROL_2                         0x28C518A3
+WRITE EMIF1_EXT_PHY_CONTROL_3                         0x518A3146
+WRITE EMIF1_EXT_PHY_CONTROL_4                         0x0014628C
+WRITE EMIF1_EXT_PHY_CONTROL_5                         0x04010040
+WRITE EMIF1_EXT_PHY_CONTROL_6                         0x01004010
+WRITE EMIF1_EXT_PHY_CONTROL_7                         0x00001004
+WRITE EMIF1_EXT_PHY_CONTROL_8                         0x04010040
+WRITE EMIF1_EXT_PHY_CONTROL_9                         0x01004010
+WRITE EMIF1_EXT_PHY_CONTROL_10                        0x00001004
+# WRITE EMIF1_EXT_PHY_CONTROL_11                        0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_12                        0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_13                        0x00000000
+WRITE EMIF1_EXT_PHY_CONTROL_14                        0x80080080
+# WRITE EMIF1_EXT_PHY_CONTROL_15                        0x00400000
+WRITE EMIF1_EXT_PHY_CONTROL_16                        0x08102040
+WRITE EMIF1_EXT_PHY_CONTROL_17                        0x00000001
+# WRITE EMIF1_EXT_PHY_CONTROL_18                        0x540A8150
+# WRITE EMIF1_EXT_PHY_CONTROL_19                        0xA81502A0
+# WRITE EMIF1_EXT_PHY_CONTROL_20                        0x002A0540
+# WRITE EMIF1_EXT_PHY_CONTROL_21                        0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_22                        0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_23                        0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_24                        0x00000077
+# WRITE EMIF1_EXT_PHY_CONTROL_25                        0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_26                        0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_27                        0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_28                        0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_29                        0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_30                        0x00000000
+# WRITE EMIF1_READ_WRITE_LEVELING_RAMP_WINDOW           0x00000000
+# WRITE EMIF1_READ_WRITE_LEVELING_RAMP_CONTROL          0x00000000
+# WRITE EMIF1_READ_WRITE_LEVELING_CONTROL               0x20000000
+WRITE EMIF1_DDR_PHY_CONTROL_1_SHADOW                  0x0E384211
+WRITE EMIF1_SDRAM_TIMING_1_SHADOW                     0x772F6873
+WRITE EMIF1_SDRAM_TIMING_2_SHADOW                     0x304A129A
+WRITE EMIF1_SDRAM_TIMING_3_SHADOW                     0x02F7E45F
+# WRITE EMIF1_POWER_MANAGEMENT_CONTROL_SHADOW           0x00004040
+WRITE EMIF1_SDRAM_REFRESH_CONTROL_SHADOW              0x0000081A
+WRITE EMIF1_DLL_CALIB_CTRL_SHADOW                     0x00050000
+WRITE EMIF1_EXT_PHY_CONTROL_1_SHADOW                  0x04020080
+WRITE EMIF1_EXT_PHY_CONTROL_2_SHADOW                  0x28C518A3
+WRITE EMIF1_EXT_PHY_CONTROL_3_SHADOW                  0x518A3146
+WRITE EMIF1_EXT_PHY_CONTROL_4_SHADOW                  0x0014628C
+WRITE EMIF1_EXT_PHY_CONTROL_5_SHADOW                  0x04010040
+WRITE EMIF1_EXT_PHY_CONTROL_6_SHADOW                  0x01004010
+WRITE EMIF1_EXT_PHY_CONTROL_7_SHADOW                  0x00001004
+WRITE EMIF1_EXT_PHY_CONTROL_8_SHADOW                  0x04010040
+WRITE EMIF1_EXT_PHY_CONTROL_9_SHADOW                  0x01004010
+WRITE EMIF1_EXT_PHY_CONTROL_10_SHADOW                 0x00001004
+# WRITE EMIF1_EXT_PHY_CONTROL_11_SHADOW                 0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_12_SHADOW                 0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_13_SHADOW                 0x00000000
+WRITE EMIF1_EXT_PHY_CONTROL_14_SHADOW                 0x80080080
+# WRITE EMIF1_EXT_PHY_CONTROL_15_SHADOW                 0x00400000
+WRITE EMIF1_EXT_PHY_CONTROL_16_SHADOW                 0x08102040
+WRITE EMIF1_EXT_PHY_CONTROL_17_SHADOW                 0x00000001
+# WRITE EMIF1_EXT_PHY_CONTROL_18_SHADOW                 0x540A8150
+# WRITE EMIF1_EXT_PHY_CONTROL_19_SHADOW                 0xA81502A0
+# WRITE EMIF1_EXT_PHY_CONTROL_20_SHADOW                 0x002A0540
+# WRITE EMIF1_EXT_PHY_CONTROL_21_SHADOW                 0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_22_SHADOW                 0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_23_SHADOW                 0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_24_SHADOW                 0x00000077
+# WRITE EMIF1_EXT_PHY_CONTROL_25_SHADOW                 0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_26_SHADOW                 0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_27_SHADOW                 0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_28_SHADOW                 0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_29_SHADOW                 0x00000000
+# WRITE EMIF1_EXT_PHY_CONTROL_30_SHADOW                 0x00000000
+WRITE EMIF1_LPDDR2_MODE_REG_CONFIG                    0x0000000A
+WRITE EMIF1_LPDDR2_MODE_DATA                          0x000000FF
+WRITE EMIF1_LPDDR2_MODE_REG_CONFIG                    0x8000000A
+WRITE EMIF1_LPDDR2_MODE_DATA                          0x000000FF
+WRITE EMIF1_LPDDR2_MODE_REG_CONFIG                    0x00000001
+WRITE EMIF1_LPDDR2_MODE_DATA                          0x000000C3
+WRITE EMIF1_LPDDR2_MODE_REG_CONFIG                    0x80000001
+WRITE EMIF1_LPDDR2_MODE_DATA                          0x000000C3
+WRITE EMIF1_LPDDR2_MODE_REG_CONFIG                    0x00000002
+WRITE EMIF1_LPDDR2_MODE_DATA                          0x00000006
+WRITE EMIF1_LPDDR2_MODE_REG_CONFIG                    0x80000002
+WRITE EMIF1_LPDDR2_MODE_DATA                          0x00000006
+WRITE EMIF1_LPDDR2_MODE_REG_CONFIG                    0x00000003
+WRITE EMIF1_LPDDR2_MODE_DATA                          0x00000001
+WRITE EMIF1_LPDDR2_MODE_REG_CONFIG                    0x80000003
+WRITE EMIF1_LPDDR2_MODE_DATA                          0x00000001
+WRITE EMIF1_LPDDR2_MODE_REG_CONFIG                    0x40000010
+WRITE EMIF1_LPDDR2_MODE_DATA                          0x00000000
+WRITE EMIF1_LPDDR2_MODE_REG_CONFIG                    0xC0000010
+WRITE EMIF1_LPDDR2_MODE_DATA                          0x00000000
+
+MODIFY CONTROL_EMIF2_SDRAM_CONFIG_EXT                 0x0000C100  0x0000C000
+MODIFY EMIF2_SDRAM_CONFIG_2                           0x48000000  0x00000000
+WRITE EMIF2_SDRAM_CONFIG                              0x988022BA
+# WRITE EMIF2_SDRAM_OUTPUT_IMPEDANCE_CALIBRATION_CONFIG 0x000B3215
+# WRITE EMIF2_TEMPERATURE_ALERT_CONFIG                  0x08000A05
+WRITE EMIF2_OCP_CONFIG                                0x0A500000
+WRITE EMIF2_READ_WRITE_EXECUTION_THRESHOLD            0x00000305
+# WRITE EMIF2_DDR_PHY_CONTROL_2                         0x00000000
+WRITE EMIF2_DDR_PHY_CONTROL_1                         0x0E38420D
+WRITE EMIF2_SDRAM_TIMING_1                            0x772F6873
+WRITE EMIF2_SDRAM_TIMING_2                            0x304A129A
+WRITE EMIF2_SDRAM_TIMING_3                            0x02F7E45F
+# WRITE EMIF2_POWER_MANAGEMENT_CONTROL                  0x00004040
+WRITE EMIF2_SDRAM_REFRESH_CONTROL                     0x0000081A
+WRITE EMIF2_DLL_CALIB_CTRL                            0x00050000
+WRITE EMIF2_EXT_PHY_CONTROL_1                         0x04020080
+WRITE EMIF2_EXT_PHY_CONTROL_2                         0x28C518A3
+WRITE EMIF2_EXT_PHY_CONTROL_3                         0x518A3146
+WRITE EMIF2_EXT_PHY_CONTROL_4                         0x0014628C
+WRITE EMIF2_EXT_PHY_CONTROL_5                         0x04010040
+WRITE EMIF2_EXT_PHY_CONTROL_6                         0x01004010
+WRITE EMIF2_EXT_PHY_CONTROL_7                         0x00001004
+WRITE EMIF2_EXT_PHY_CONTROL_8                         0x04010040
+WRITE EMIF2_EXT_PHY_CONTROL_9                         0x01004010
+WRITE EMIF2_EXT_PHY_CONTROL_10                        0x00001004
+# WRITE EMIF2_EXT_PHY_CONTROL_11                        0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_12                        0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_13                        0x00000000
+WRITE EMIF2_EXT_PHY_CONTROL_14                        0x80080080
+# WRITE EMIF2_EXT_PHY_CONTROL_15                        0x00400000
+WRITE EMIF2_EXT_PHY_CONTROL_16                        0x08102040
+WRITE EMIF2_EXT_PHY_CONTROL_17                        0x00000001
+# WRITE EMIF2_EXT_PHY_CONTROL_18                        0x540A8150
+# WRITE EMIF2_EXT_PHY_CONTROL_19                        0xA81502A0
+# WRITE EMIF2_EXT_PHY_CONTROL_20                        0x002A0540
+# WRITE EMIF2_EXT_PHY_CONTROL_21                        0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_22                        0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_23                        0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_24                        0x00000077
+# WRITE EMIF2_EXT_PHY_CONTROL_25                        0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_26                        0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_27                        0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_28                        0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_29                        0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_30                        0x00000000
+# WRITE EMIF2_READ_WRITE_LEVELING_RAMP_WINDOW           0x00000000
+# WRITE EMIF2_READ_WRITE_LEVELING_RAMP_CONTROL          0x00000000
+# WRITE EMIF2_READ_WRITE_LEVELING_CONTROL               0x20000000
+WRITE EMIF2_DDR_PHY_CONTROL_1_SHADOW                  0x0E384211
+WRITE EMIF2_SDRAM_TIMING_1_SHADOW                     0x772F6873
+WRITE EMIF2_SDRAM_TIMING_2_SHADOW                     0x304A129A
+WRITE EMIF2_SDRAM_TIMING_3_SHADOW                     0x02F7E45F
+# WRITE EMIF2_POWER_MANAGEMENT_CONTROL_SHADOW           0x00004040
+WRITE EMIF2_SDRAM_REFRESH_CONTROL_SHADOW              0x0000081A
+WRITE EMIF2_DLL_CALIB_CTRL_SHADOW                     0x00050000
+WRITE EMIF2_EXT_PHY_CONTROL_1_SHADOW                  0x04020080
+WRITE EMIF2_EXT_PHY_CONTROL_2_SHADOW                  0x28C518A3
+WRITE EMIF2_EXT_PHY_CONTROL_3_SHADOW                  0x518A3146
+WRITE EMIF2_EXT_PHY_CONTROL_4_SHADOW                  0x0014628C
+WRITE EMIF2_EXT_PHY_CONTROL_5_SHADOW                  0x04010040
+WRITE EMIF2_EXT_PHY_CONTROL_6_SHADOW                  0x01004010
+WRITE EMIF2_EXT_PHY_CONTROL_7_SHADOW                  0x00001004
+WRITE EMIF2_EXT_PHY_CONTROL_8_SHADOW                  0x04010040
+WRITE EMIF2_EXT_PHY_CONTROL_9_SHADOW                  0x01004010
+WRITE EMIF2_EXT_PHY_CONTROL_10_SHADOW                 0x00001004
+# WRITE EMIF2_EXT_PHY_CONTROL_11_SHADOW                 0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_12_SHADOW                 0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_13_SHADOW                 0x00000000
+WRITE EMIF2_EXT_PHY_CONTROL_14_SHADOW                 0x80080080
+# WRITE EMIF2_EXT_PHY_CONTROL_15_SHADOW                 0x00400000
+WRITE EMIF2_EXT_PHY_CONTROL_16_SHADOW                 0x08102040
+WRITE EMIF2_EXT_PHY_CONTROL_17_SHADOW                 0x00000001
+# WRITE EMIF2_EXT_PHY_CONTROL_18_SHADOW                 0x540A8150
+# WRITE EMIF2_EXT_PHY_CONTROL_19_SHADOW                 0xA81502A0
+# WRITE EMIF2_EXT_PHY_CONTROL_20_SHADOW                 0x002A0540
+# WRITE EMIF2_EXT_PHY_CONTROL_21_SHADOW                 0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_22_SHADOW                 0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_23_SHADOW                 0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_24_SHADOW                 0x00000077
+# WRITE EMIF2_EXT_PHY_CONTROL_25_SHADOW                 0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_26_SHADOW                 0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_27_SHADOW                 0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_28_SHADOW                 0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_29_SHADOW                 0x00000000
+# WRITE EMIF2_EXT_PHY_CONTROL_30_SHADOW                 0x00000000
+WRITE EMIF2_LPDDR2_MODE_REG_CONFIG                    0x0000000A
+WRITE EMIF2_LPDDR2_MODE_DATA                          0x000000FF
+WRITE EMIF2_LPDDR2_MODE_REG_CONFIG                    0x8000000A
+WRITE EMIF2_LPDDR2_MODE_DATA                          0x000000FF
+WRITE EMIF2_LPDDR2_MODE_REG_CONFIG                    0x00000001
+WRITE EMIF2_LPDDR2_MODE_DATA                          0x000000C3
+WRITE EMIF2_LPDDR2_MODE_REG_CONFIG                    0x80000001
+WRITE EMIF2_LPDDR2_MODE_DATA                          0x000000C3
+WRITE EMIF2_LPDDR2_MODE_REG_CONFIG                    0x00000002
+WRITE EMIF2_LPDDR2_MODE_DATA                          0x00000006
+WRITE EMIF2_LPDDR2_MODE_REG_CONFIG                    0x80000002
+WRITE EMIF2_LPDDR2_MODE_DATA                          0x00000006
+WRITE EMIF2_LPDDR2_MODE_REG_CONFIG                    0x00000003
+WRITE EMIF2_LPDDR2_MODE_DATA                          0x00000001
+WRITE EMIF2_LPDDR2_MODE_REG_CONFIG                    0x80000003
+WRITE EMIF2_LPDDR2_MODE_DATA                          0x00000001
+WRITE EMIF2_LPDDR2_MODE_REG_CONFIG                    0x40000010
+WRITE EMIF2_LPDDR2_MODE_DATA                          0x00000000
+WRITE EMIF2_LPDDR2_MODE_REG_CONFIG                    0xC0000010
+WRITE EMIF2_LPDDR2_MODE_DATA                          0x00000000
+
+# Power configurations ------------------------------------------------------------------
+
+# Configure SR I2C Clock
+
+WRITE        PRM_VC_CFG_I2C_MODE                 0x00000000
+WRITE        PRM_VC_CFG_I2C_CLK                  0x00006026
+
+# Configure Palmas TWL6035
+
+# MPU 1050 mV - SHOULD BE REGISTER 22h?
+WRITE        PRM_VC_VAL_BYPASS                   0x013D2312
+POLL_ZERO    PRM_VC_VAL_BYPASS                   0x01000000
+MODIFY       PRM_IRQSTATUS_MPU                   0x00000000 0x00000000
+
+# MM 1050 mV - SHOULD BE REGISTER 2Ah?
+WRITE        PRM_VC_VAL_BYPASS                   0x013D2B12
+POLL_ZERO    PRM_VC_VAL_BYPASS                   0x01000000
+MODIFY       PRM_IRQSTATUS_MPU                   0x00000000 0x00000000
+
+# CORE 1050 mV - SHOULD BE REGISTER 36h?
+WRITE        PRM_VC_VAL_BYPASS                   0x013D3712
+POLL_ZERO    PRM_VC_VAL_BYPASS                   0x01000000
+MODIFY       PRM_IRQSTATUS_MPU                   0x00000000 0x00000000
+
+#MODIFY 0x48053134 0x00000040 0x00000040
+#WRITE 0x48053194 0x00000040
+
+
+# NECESSARY TO PROGRAM FORCE INTO SMPS6 FOR 1.2V LPDDR SUPPLY?
+
+# MPU VOLTAGE SET TO : 1100 mV
+# CORE VOLTAGE SET TO : 1050 mV
+# LPDDR VOLTAGE SET TO : 1200 mV
+# IVA  VOLTAGE SET TO : 1100 mV
+# value_mpu_temp : 1422312
+# value_core_temp : 13d3712
+# value_lpddr_temp : 14c2f12
+# value_iva_temp : 1422b12
+# (int*)PRM_VC_CFG_I2C_CLK  (-->0x4AE07BB8 PRM_VC_CFG_I2C_CLK) =  0x6026 (0x00006026)
+# (int*)PRM_VC_CFG_I2C_MODE  (-->0x4AE07BB4 PRM_VC_CFG_I2C_MODE) =  0x0 (0x00000000)
+# (int*)PRM_VC_CFG_VAL_BYPASS  (-->0x4AE07BA0 PRM_VC_VAL_BYPASS) =  value_mpu_temp (0x01422312)
+# (int*)PRM_VC_CFG_I2C_CLK  (-->0x4AE07BB8 PRM_VC_CFG_I2C_CLK) =  0x6026 (0x00006026)
+# (int*)PRM_VC_CFG_I2C_MODE  (-->0x4AE07BB4 PRM_VC_CFG_I2C_MODE) =  0x0 (0x00000000)
+# (int*)PRM_VC_CFG_VAL_BYPASS  (-->0x4AE07BA0 PRM_VC_VAL_BYPASS) =  value_core_temp (0x013D3712)
+# (int*)PRM_VC_CFG_I2C_CLK  (-->0x4AE07BB8 PRM_VC_CFG_I2C_CLK) =  0x6026 (0x00006026)
+# (int*)PRM_VC_CFG_I2C_MODE  (-->0x4AE07BB4 PRM_VC_CFG_I2C_MODE) =  0x0 (0x00000000)
+# (int*)PRM_VC_CFG_VAL_BYPASS  (-->0x4AE07BA0 PRM_VC_VAL_BYPASS) =  value_lpddr_temp (0x014C2F12)
+# (int*)PRM_VC_CFG_I2C_CLK  (-->0x4AE07BB8 PRM_VC_CFG_I2C_CLK) =  0x6026 (0x00006026)
+# (int*)PRM_VC_CFG_I2C_MODE  (-->0x4AE07BB4 PRM_VC_CFG_I2C_MODE) =  0x0 (0x00000000)
+# (int*)PRM_VC_CFG_VAL_BYPASS  (-->0x4AE07BA0 PRM_VC_VAL_BYPASS) =  value_iva_temp (0x01422B12)
+                               
+# PRCM configuration --------------------------------------------------------------------
+
+# Applying OPP WAKEUP 19_2 DDR 532 ------
+
+# Set system clock to 19.2MHz 
+# WRITE CM_SYS_CLKSEL  0x00000004
+#    SYSCLKFREQ  (-->0x00000003 ) =  SYS_CLK_19_2 (0x00000003)
+
+# opp_config OPP board 8
+#  Zonda DPLL programming
+# > Cortex A15 DPLL Board OPP 8
+
+#  Put DPLL into bypass mode
+MODIFY CM_CLKMODE_DPLL_MPU                                        0x00000007  0x00000005
+POLL_ZERO CM_IDLEST_DPLL_MPU                                      0x00000001
+
+#  Program DPLL_CLKOUT divider (M2 = 1)
+WRITE CM_DIV_M2_DPLL_MPU                                          0x00000001
+
+#  Program DPLL frequency (M = )
+MODIFY CM_CLKSEL_DPLL_MPU                                         0x0007FF7F  0x00017708
+
+#  Put DPLL into lock mode
+WRITE  CM_CLKMODE_DPLL_MPU                                        0x00000007
+
+#  Wait for DPLL to be locked
+POLL_NZERO CM_IDLEST_DPLL_MPU                                     0x00000001
+
+#  PER DPLL programming
+
+MODIFY CM_CLKMODE_DPLL_PER                                        0x00000007  0x00000005
+POLL_ZERO CM_IDLEST_DPLL_PER                                      0x00000001
+
+WRITE CM_DIV_M2_DPLL_PER                                          0x00000004
+WRITE CM_DIV_M3_DPLL_PER                                          0x00000003
+WRITE CM_DIV_H11_DPLL_PER                                         0x00000002
+WRITE CM_DIV_H12_DPLL_PER                                         0x00000002
+WRITE CM_DIV_H14_DPLL_PER                                         0x00000000
+WRITE CM_L4PER_CLKSTCTRL                                          0x00000002
+
+MODIFY CM_CLKSEL_DPLL_PER                                         0x0007FF7F  0x00001400
+
+#  Put DPLL into lock mode
+WRITE CM_CLKMODE_DPLL_PER                                         0x00000007
+
+#  Wait for DPLL to be locked
+POLL_NZERO CM_IDLEST_DPLL_PER                                     0x00000001
+
+#  Enable peripherals - NOTE ADDED EMIF2!!
+
+WRITE CM_EMIF_EMIF1_CLKCTRL                                       0x00000001
+WRITE CM_EMIF_EMIF2_CLKCTRL                                       0x00000001
+
+WRITE CM_L4PER_UART1_CLKCTRL                                      0x00000002
+WRITE CM_L4PER_UART2_CLKCTRL                                      0x00000002
+WRITE CM_L4PER_UART3_CLKCTRL                                      0x00000002
+WRITE CM_L4PER_UART4_CLKCTRL                                      0x00000002
+
+#  Core DPLL programming
+#  Put DPLL into bypass mode
+MODIFY CM_CLKMODE_DPLL_CORE                                       0x00000007  0x00000005
+POLL_ZERO CM_IDLEST_DPLL_CORE                                     0x00000001
+
+#WRITE CM_CLKSEL_CORE                                              0x00000110
+WRITE CM_CLKSEL_ABE                                               0x00000501
+WRITE CM_DLL_CTRL                                                 0x00000000
+WRITE CM_CLKSEL_DPLL_CORE                                         0x0000000B
+WRITE CM_DIV_M2_DPLL_CORE                                         0x00000002
+WRITE CM_DIV_M3_DPLL_CORE                                         0x00000005
+WRITE CM_DIV_H11_DPLL_CORE                                        0x00000008
+WRITE CM_DIV_H12_DPLL_CORE                                        0x00000004
+WRITE CM_DIV_H13_DPLL_CORE                                        0x0000003E
+WRITE CM_DIV_H14_DPLL_CORE                                        0x00000005
+WRITE CM_DIV_H22_DPLL_CORE                                        0x00000005
+WRITE CM_DIV_H23_DPLL_CORE                                        0x00000007
+
+MODIFY CM_CLKSEL_DPLL_CORE                                        0x0007FF7F  0x00029910
+#  Put core DPLL into lock mode
+
+
+WRITE CM_EMIF_CLKSTCTRL                                           0x00000002
+#  EMIF1
+POLL_ZERO CM_EMIF_EMIF1_CLKCTRL                                   0x00030000
+#  EMIF2
+POLL_ZERO CM_EMIF_EMIF2_CLKCTRL                                   0x00030000
+#  start freq_update in CM_SHADOW_FREQ_CONFIG1 and CM_SHADOW_FREQ_CONFIG2 
+WRITE CM_SHADOW_FREQ_CONFIG2                                      0x00000024
+WRITE CM_SHADOW_FREQ_CONFIG1                                      0x00001709
+
+#  wait for CM_SHADOW_FREQ_CONFIG1.FREQ_UPDATE to be cleared by PRCM
+POLL_NZERO CM_SHADOW_FREQ_CONFIG1                                 0x00000001
+
+#  configure MEMIF domain back in HW_AUTO
+WRITE CM_EMIF_CLKSTCTRL                                           0x00000003
+
+WAIT_N                                                            0x2800
+
+#  Wait for DPLL to be locked
+POLL_NZERO CM_IDLEST_DPLL_CORE                                    0x00000001
+
+# Dropping ABE and DUCATI configuration
+
+# opp_config OPP Board FINISHED 8
+
+#WRITE        CM_L3INIT_HSMMC1_CLKCTRL            0x00000002
+#WRITE        CM_L3INIT_HSMMC1_CLKCTRL            0x01000000
+#WRITE        CM_L3INIT_HSMMC2_CLKCTRL            0x00000002
+#WRITE        CM_L3INIT_HSMMC2_CLKCTRL            0x01000000
+
+# Other configurations ------------------------------------------------------------------
+
+DEBUG_UART   0x0003
+

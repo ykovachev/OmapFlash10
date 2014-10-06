@@ -1,0 +1,42 @@
+# Script file for download of full Android DB
+
+# Set parameters for download of second loader, e.g. OMAP4 sEVM with 8Gb Elpida memory
+# Note that the configuration will be auto-picked based on the -p parameter and that
+# for 4460 the memory architecture of the SDRAM is not the same as for 4470. 
+
+-v
+-2
+-omap 4
+-p SEVM_MDDR_ELPIDA_8G
+-t 600
+
+# Pick the Android binary files to load to the target. In this script they are assumed to 
+# reside in an 'Android' sub-folder, but this path can be changed as needed. The xloader
+# binary will need to match the platform used. Here we pick the one for 4460 ES1.1
+
+# flash xloader .\android\Blaze_Tablet_GP_ES1.0_MLO
+# flash xloader .\android\Blaze_Tablet_GP_ES1.1_MLO
+# flash xloader .\android\Blaze_Tablet_GP_ES2.2_MLO
+# flash xloader .\android\Blaze_Tablet_HS_ES1.0_MLO
+flash xloader .\android\Blaze_Tablet_HS_ES1.1_MLO
+# flash xloader .\android\Blaze_Tablet_HS_ES2.1_MLO
+# flash xloader .\android\Blaze_Tablet_HS_ES2.2_MLO
+# flash xloader .\android\Blaze_Tablet_HS_ES2.3_MLO
+
+flash bootloader .\android\u-boot.bin
+# flash misc <no file>
+# flash efs <no file>
+# flash crypto <no file>
+flash recovery .\android\recovery.img
+flash boot .\android\boot.img
+flash system .\android\system.img
+flash cache .\android\cache.img
+flash userdata .\android\userdata.img
+
+# Format file table
+
+oem format
+
+# Reboot the platform to complete the load and boot up Android
+
+reboot

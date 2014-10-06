@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GPImage>
+  <GPImageUserOptions>
+    <LoadAddress>40200000</LoadAddress>
+    <MemoryType>NAND</MemoryType>
+    <ImageOffset>00000000</ImageOffset>
+    <CHOptions CHIncluded="False" CHOffset="00000000" CHSectionName="3630\certificates\CHSECTION" />
+  </GPImageUserOptions>
+</GPImage>

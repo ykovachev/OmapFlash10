@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RunOnly|Win32">
+      <Configuration>RunOnly</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E3B62104-C649-4E52-A3F9-3673CA62C6E4}</ProjectGuid>
+    <RootNamespace>nor_intel_sibley_drv</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="..\..\..\omapflash_custom_rules.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\flashdrv\inc;..\..\..\common\inc;..\..\..\dnld\inc;..\..\..\disp\inc;..\..\..\target\src\platform\3430sdp;..\..\..\dalfwrk\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;SIMULATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>cd
+cd ..\..\build
+make -f nor_intel_sibley_drv_makefile clean | perl ..\..\target\build\tms470out_to_vs9out.pl
+make -f nor_intel_sibley_drv_makefile all | perl ..\..\target\build\tms470out_to_vs9out.pl
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\flashdrv\inc;..\..\..\common\inc;..\..\..\disp\inc;..\..\..\dnld\inc;..\..\..\target\src\platform\3430sdp;..\..\..\dalfwrk\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;SIMULATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>cd
+cd ..\..\build
+make -f nor_intel_sibley_drv_makefile clean | perl ..\..\target\build\tms470out_to_vs9out.pl
+make -f nor_intel_sibley_drv_makefile all | perl ..\..\target\build\tms470out_to_vs9out.pl
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">
+    <PostBuildEvent>
+      <Command>cd
+cd ..\..\build
+make -f nor_intel_sibley_drv_makefile clean | perl ..\..\target\build\tms470out_to_vs9out.pl
+make -f nor_intel_sibley_drv_makefile all | perl ..\..\target\build\tms470out_to_vs9out.pl
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\drv_config.c" />
+    <ClCompile Include="..\..\src\nor_intel_sibley_drv.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\nor_intel_sibley_drv.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\..\..\omapflash_custom_rules.targets" />
+  </ImportGroup>
+</Project>

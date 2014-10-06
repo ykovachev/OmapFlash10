@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug All|Win32">
+      <Configuration>Debug All</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RunOnly|Win32">
+      <Configuration>RunOnly</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5FE497AB-2DC8-44DF-8736-FA1D74EF50B3}</ProjectGuid>
+    <RootNamespace>comdriver</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='RunOnly|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\__out__\lib\Release/comdriver.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Program Files\Microsoft Visual Studio 9.0\VC\include;C:\WinDDK\7600.16385.1\inc\ddk;C:\WinDDK\7600.16385.1\inc\mfc42;C:\WinDDK\7600.16385.1\inc\api;..\inc;..\..\frontend\inc;..\..\utils\inc;..\..\disp\inc;..\..\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;COMDRIVER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\..\__out__\obj\Release\comdriver/comdriver.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\..\__out__\obj\Release\comdriver/</AssemblerListingLocation>
+      <ObjectFileName>.\..\..\__out__\obj\Release\comdriver/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\__out__\obj\Release\comdriver/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0406</Culture>
+      <AdditionalIncludeDirectories>..\..\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/FIXED:NO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)comdriver.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\..\__out__\bin\Release\comdriver.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\..\__out__\bin\Release\comdriver.map</MapFileName>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>.\..\..\__out__\lib\Release/comdriver.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>C:\WinDDK\7600.16385.1\lib\win7\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\__out__\lib\Release/comdriver.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\__out__\lib\Debug/comdriver.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Program Files\Microsoft Visual Studio 10.0\VC\include;C:\WinDDK\7600.16385.1\inc\ddk;C:\WinDDK\7600.16385.1\inc\mfc42;C:\WinDDK\7600.16385.1\inc\api;..\inc;..\..\frontend\inc;..\..\common\inc;..\..\utils\inc;..\..\disp\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;COMDRIVER_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\..\__out__\obj\Debug\comdriver/comdriver.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\..\__out__\obj\Debug\comdriver/vc8/</AssemblerListingLocation>
+      <ObjectFileName>.\..\..\__out__\obj\Debug\comdriver/vc8/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\__out__\obj\Debug\comdriver/vc8/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0406</Culture>
+      <AdditionalIncludeDirectories>..\..\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/FIXED:NO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)comdriver.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\..\__out__\bin\Debug\comdriver.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\..\__out__\bin\Debug\comdriver.map</MapFileName>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>.\..\..\__out__\lib\Debug/comdriver.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>C:\WinDDK\7600.16385.1\lib\win7\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\__out__\lib\Debug/comdriver.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\__out__\lib\Debug/comdriver.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\inc;..\..\frontend\inc;..\..\..\common\inc;..\..\..\common\sapinc;..\..\utils\inc;..\..\disp\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;COMDRIVER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\..\__out__\obj\Debug\comdriver/comdriver.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\..\__out__\obj\Debug\comdriver/vc8/</AssemblerListingLocation>
+      <ObjectFileName>.\..\..\__out__\obj\Debug\comdriver/vc8/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\__out__\obj\Debug\comdriver/vc8/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0406</Culture>
+      <AdditionalIncludeDirectories>..\..\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/FIXED:NO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\__out__\bin\Debug\comdriver.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\..\__out__\bin\Debug\comdriver.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\..\__out__\bin\Debug\comdriver.map</MapFileName>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>.\..\..\__out__\lib\Debug/comdriver.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\__out__\lib\Debug/comdriver.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\ComDriver.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\PortEnumerator.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\serialdriver.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\StdAfx.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">Create</PrecompiledHeader>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\src\usbdriver.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\comdriver.h" />
+    <ClInclude Include="..\inc\PortEnumerator.h" />
+    <ClInclude Include="..\inc\serialdriver.h" />
+    <ClInclude Include="..\inc\StdAfx.h" />
+    <ClInclude Include="..\inc\usbdriver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\comdriver.rc">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug All|Win32'">\OMAPSW_DP\csst\host\comdriver\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">\OMAPSW_DP\csst\host\comdriver\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">\OMAPSW_DP\csst\host\comdriver\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\comdriver.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\inc\setupapi.lib" />
+    <Library Include="..\inc\usbd.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
